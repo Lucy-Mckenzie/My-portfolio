@@ -5,7 +5,7 @@ export default function Nav() {
 
   return (
     <nav>
-      <div className="flex items-center bg-[#ead0ab] shadow-[3px_6px_10px_rgba(0,_0,_0,_0.4)] px-3 justify-between z-2">
+      <div className="flex items-center bg-[#ead0ab] shadow-[3px_6px_10px_rgba(0,_0,_0,_0.4)] px-3 justify-between z-2 border">
       <NavLink to="/">
       <img src="/images/logo.png" alt="logo" className="h-[60px] ml-20 mr-auto"/>
       </NavLink>
