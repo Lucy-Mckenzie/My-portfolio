@@ -3,12 +3,12 @@ export default function About() {
   
   return (
     <div className='bg-[#ead0ab] h-screen flex items-center justify-center text-center font-merriweather'>
-      <div className='max-w-[#1000px] w-full'>
+      <div className='max-w-[#1000px] w-full flex flex-col text-left items-center ml-16'>
     <h1 className='font-extrabold text-9xl text-[#213b73] font-merriweather'>
       Hi, I&apos;m Lucy
       </h1>
-    <p 
-    className='text-[#213b73] text-lg mt-4'>I&apos;m a creator and a lifelong learner, always seeking to understand more. Oh, and I have a small obsession with clouds!
+    <p className='text-[#213b73] text-lg mt-4 max-w-[600px] py-3'>
+      I&apos;m a creator and a lifelong learner, always seeking to understand more. Oh, and I have a small obsession with clouds!
     </p>
     <div className='flex justify-center space-x-2'>
       <a href="https://github.com/Lucy-Mckenzie" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
