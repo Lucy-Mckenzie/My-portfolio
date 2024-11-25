@@ -1,18 +1,24 @@
 import Navbar from './Navbar'
-import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
+import About from '../../pages/About'
+import Skills from '../../pages/Skills'
+import Projects from '../../pages/Projects'
+import Contact from '../../pages/Contact'
 
-const App = () => {
+export default function layout() {
 
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   )
 }
 
-export default App
+
 
 

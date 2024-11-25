@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './client/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        merriweather: ['Merriweather', 'serif'],
+        sans: ['Lato', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

@@ -1,14 +1,27 @@
+import Icons from '../components/Icons'
 
-const Skills = () => {
-
+export default function Skills() {
 return (
-  <div className='bg-[#ead0ab] h-screen flex flex-col'>
-  <p>My Skills</p>
-  <img src='/images/me.jpeg' alt='me' className="max-w-[300px] max-h-[366px] object-contain">
-  </img>
-  
+  <div className='bg-white h-screen flex items-center justify-center'>
+    <div className='flex-1 max-w-[300px]'>
+     <p className='text-4xl font-light font-lato text-center mb-10 italic'>
+    My Skills
+    </p>
+    <div className='overflow-hidden rounded-md max-w-[300px] max-h-[366px] flex items-center mt-2'>
+      <img src='/images/me.jpeg' alt='me' />
+    </div>
+    </div>
+  <div className='flex flex-1 flex-col max-w-[500px] mt-20 ml-4'>
+  <Icons />
+  <p className='text-2xl font-semibold mb-4'>
+  I love being in the creative flow.
+  </p>
+  <p className='mb-4'>
+    As a child, I was absolutely fascinated by various board games and, later on, computer games. I spent many hours absorbed in the art of games, always with one sole focus: solving the problem!
+    With a passion for problem-solving, teaching, and negotiating, I quickly found myself right at home in the world of coding.
+  </p>
+  </div>
   </div>
 )
 
 }
-export default Skills
