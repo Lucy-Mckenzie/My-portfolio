@@ -1,8 +1,12 @@
 import Icons from '../components/Icons'
+import { useOutletContext } from 'react-router-dom'
 
 export default function Skills() {
+
+  const { darkMode } = useOutletContext<{ darkMode: boolean }>()
+
 return (
-  <div className='h-screen flex items-center justify-center'>
+  <div className={`h-screen flex items-center justify-center ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fcf3e3] text-black'}`}>
     <div className='flex-1 max-w-[300px]'>
      <p className='text-4xl font-light font-lato text-center mb-10 italic'>
     My Skills

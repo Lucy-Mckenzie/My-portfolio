@@ -1,6 +1,6 @@
 export default function Clouds() {
   return (
-    <div>
+    <div className='overflow-hidden'>
     <img src='/images/clouds/cloud.png' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving' 
