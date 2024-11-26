@@ -18,7 +18,7 @@ export default function Layout() {
       <img
         src={darkMode ? '/images/icons/night-mode.png' : '/images/icons/light-mode.png'}
         alt={darkMode ? 'Dark Mode' : 'Light Mode'}
-        className="w-10 h-10"
+        className='w-10 h-10'
           />
       </button>
       <div>

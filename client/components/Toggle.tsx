@@ -13,7 +13,7 @@ export default function DayNightToggle() {
         <img
           src={day ? '/images/day.png' : '/images/night.png'}
           alt={day ? 'Day' : 'Night'}
-          className="w-10 h-10"
+          className='w-10 h-10'
         />
       </button>
     </div>
