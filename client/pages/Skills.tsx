@@ -2,9 +2,9 @@ import Icons from '../components/Icons'
 
 export default function Skills() {
 return (
-  <div className='bg-[#203a58] h-screen flex items-center justify-center'>
+  <div className='h-screen flex items-center justify-center'>
     <div className='flex-1 max-w-[300px]'>
-     <p className='text-4xl font-light font-lato text-center text-white mb-10 italic'>
+     <p className='text-4xl font-light font-lato text-center mb-10 italic'>
     My Skills
     </p>
     <div className='overflow-hidden rounded-md max-w-[300px] max-h-[366px] flex items-center mt-2'>
@@ -13,10 +13,10 @@ return (
     </div>
   <div className='flex flex-1 flex-col max-w-[500px] mt-20 ml-4'>
   <Icons />
-  <p className='text-2xl text-white font-semibold mb-4'>
+  <p className='text-2xl font-semibold mb-4'>
   I love being in the creative flow.
   </p>
-  <p className='mb-4 text-white'>
+  <p className='mb-4'>
     As a child, I was absolutely fascinated by various board games and, later on, computer games. I spent many hours absorbed in the art of games, always with one sole focus: solving the problem!
     With a passion for problem-solving, teaching, and negotiating, I quickly found myself right at home in the world of coding.
   </p>
