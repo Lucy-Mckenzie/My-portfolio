@@ -5,8 +5,8 @@ export default function Projects() {
      <p className="text-4xl font-light font-lato text-center italic mb-40">
       Projects
      </p>
-    <div className="bg-white flex items-center justify-center">
-      <div className="flex flex-1 flex-col text-left max-w-96">
+    <div className="bg-[#31465a] flex items-center justify-center">
+      <div className="flex flex-1 flex-col text-left text-white max-w-96">
       <p className="text-4xl font-light font-lato mb-12">
         Personal Project
       </p>

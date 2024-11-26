@@ -11,9 +11,11 @@ export default function layout() {
     <div>
       <Navbar />
       <About />
+      <div className='bg-[#31465a]'>
       <Skills />
       <Projects />
       <Contact />
+      </div>
       <Footer />
     </div>
   )
