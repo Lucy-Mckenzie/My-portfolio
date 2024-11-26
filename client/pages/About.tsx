@@ -4,7 +4,7 @@ export default function About() {
 
   return (
     <div className='bg-[#203a58] h-screen flex items-center justify-center text-center font-merriweather'>
-      <div className='max-w-[700px] w-full flex flex-col text-left items-center ml-16'>
+      <div className='max-w-[700px] w-full flex flex-col text-left items-center ml-16 overflow-hidden'>
     <h1 className='font-light text-8xl text-white font-merriweather z-10'>
       Hi, I&apos;m Lucy
       </h1>
