@@ -6,16 +6,26 @@ export default {
       fontFamily: {
         merriweather: ['Merriweather', 'serif'],
         sans: ['Lato', 'sans-serif'],
-      },
-      animation: {
-        'glow-spin': 'glow-spin 50s linear infinite',
-      },
-      keyframes: {
-        'glow-spin': {
-          '0%, 100%': { transform: 'rotate(0deg)', opacity: '1' },
-          '50%': { transform: 'rotate(180deg)', opacity: '0.5' },
-        },
+        manrope: ['Manrope', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
     },
+    animation: {
+      'clouds-moving': 'moveClouds 60s linear infinite',
+    },
+    keyframes: {
+      moveClouds: {
+        '0%': {
+          transform: 'translateX(-100%)',
+        },
+        '50%': {
+          transform: 'translateX(100%)'
+        },
+        '100%': {
+          transform: 'translateX(-100%)',
+        },
+      },
+    },
+    darkMode: 'class',
   },
   },
   plugins: [],
