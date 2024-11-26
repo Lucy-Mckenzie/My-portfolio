@@ -12,7 +12,7 @@ export default function About() {
     <div 
     className={`h-screen flex items-center justify-center text-center font-merriweather overflow-hidden ${darkMode ? 'bg-[#203a58] text-white' : 'bg-[#66a5bc] text-black'}`}>
       <div className='max-w-[700px] w-full flex flex-col text-left items-center ml-16'>
-    <h1 className='font-light text-8xl font-merriweather z-10'>
+    <h1 className='font-light text-9xl font-playfair z-10'>
       Hi, I&apos;m Lucy
       </h1>
     <Clouds />

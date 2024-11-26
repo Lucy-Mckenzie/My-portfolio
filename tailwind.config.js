@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         merriweather: ['Merriweather', 'serif'],
         sans: ['Lato', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
     },
     animation: {
       'clouds-moving': 'moveClouds 60s linear infinite',

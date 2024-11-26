@@ -24,8 +24,8 @@ export default function Layout() {
       <div>
       <Navbar darkMode={darkMode} />
       <Outlet context={{ darkMode }} />
+      <Footer darkMode={darkMode} />
       </div>
-      <Footer />
     </div>
   </>
   )
