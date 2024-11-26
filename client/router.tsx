@@ -6,16 +6,14 @@ import {
 } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Projects from './pages/Projects'
 import Layout from './components/layout/Layout'
-import Skills from './pages/Skills'
+import ProjectWh from './pages/Wehike'
 
 export const routes = createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<About />} />
-    <Route path='/skills' element={<Skills />} />
-    <Route path='/projects' element={<Projects />} />
-    <Route path='/contact' element={<Contact />} />
+    <Route path='wehike' element={<ProjectWh />} />
+    <Route path='contact' element={<Contact />} />
   </Route>,
 )
 export const router = createBrowserRouter(routes)
