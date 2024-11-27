@@ -23,6 +23,8 @@ export default function Projects() {
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
         <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
         <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
+        <img src="/images/icons/leaflet.svg" alt="leaflet icon" className="w-8 h-8" />
+        <img src="/images/icons/auth0.png" alt="auth0 icon" className="w-7 h-7" />
      </div>
         <p className='mb-4 mr-20 font-manrope text-xl'>
           Discover information about your favorite hikes! Stay updated on recent alerts and log in to share reviews with friends.
@@ -54,7 +56,8 @@ export default function Projects() {
         <div className='flex flex-row space-x-2 mb-3'>
         <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
-        <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
+        <img src="/images/icons/css3.svg" alt="css3 icon" className="w-7 h-7" />
+        <img src="/images/icons/html5.svg" alt="html5 icon" className="w-7 h-7" />
         <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
      </div>
         <p className='mb-4 mr-20 font-manrope text-xl'>
@@ -88,6 +91,7 @@ export default function Projects() {
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
         <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
         <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
+        <img src="/images/icons/leaflet.svg" alt="leaflet icon" className="w-8 h-8" />
      </div>
         <p className='mb-4 mr-20 font-manrope text-xl'>
         Pin your favorite locations on the map with custom markers! Powered by Leaflet.js and SQLite, all your pins are securely saved, allowing you to share them with friends or keep them private.
