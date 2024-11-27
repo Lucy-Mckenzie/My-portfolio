@@ -6,7 +6,7 @@ export default function Projects() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fcf3e3] text-black'}`}>
+    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fffbf9] text-black'}`}>
      <p className='text-4xl font-extralight font-manrope text-center mb-40 pb-2 border-b-[0.5px] w-1/2 mx-auto'>
       Projects
      </p>
@@ -60,7 +60,7 @@ export default function Projects() {
         <p className='mb-4 mr-20 font-manrope text-xl'>
           Enter your ID and book ID to check out a book from the Sloth Libraries. The database (SQLite is updated instantly) - just make sure you bring it back!
         </p>
-        <Link to='/slothlibraries'>
+        <Link to='/slothlibrary'>
         <button 
         className=' w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:text-gray-600 hover:bg-gray-300'>
           VIEW PROJECT

@@ -1,11 +1,11 @@
 import { useOutletContext } from 'react-router-dom'
 
-export default function ProjectWh() {
+export default function WeHike() {
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fcf3e3] text-black'}`}>
+    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-[1100px]'>
     <h1 className='font-manrope flex items-center font-semibold text-4xl'>
      We Hike: Your Ultimate Hiking Resource
