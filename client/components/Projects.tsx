@@ -6,7 +6,7 @@ export default function Projects() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
      <p className='text-4xl font-extralight font-manrope text-center mb-40 pb-2 border-b-[0.5px] w-1/2 mx-auto'>
       Projects
      </p>
@@ -31,7 +31,7 @@ export default function Projects() {
         </p>
         <Link to='/wehike'>
         <button 
-        className=' w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:text-gray-600 hover:bg-gray-300'>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
           VIEW PROJECT
           </button>
         </Link>
@@ -40,7 +40,7 @@ export default function Projects() {
       <img
         src='/images/project-photos/wehike.png'
         alt='project display'
-        className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg shadow-[0_4px_6px_rgba(0,0,0,0.3)]'
+        className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
       />
     </div>
   </div>
@@ -65,7 +65,7 @@ export default function Projects() {
         </p>
         <Link to='/slothlibrary'>
         <button 
-        className=' w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:text-gray-600 hover:bg-gray-300'>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
           VIEW PROJECT
           </button>
         </Link>
@@ -74,7 +74,7 @@ export default function Projects() {
       <img
         src='/images/project-photos/slothli.png'
         alt='project display'
-        className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg shadow-[0_4px_6px_rgba(0,0,0,0.3)]'
+        className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
       />
       </div>
     </div>
@@ -98,16 +98,16 @@ export default function Projects() {
         </p>
         <Link to='/dotmap'>
         <button 
-        className=' w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:text-gray-600 hover:bg-gray-300'>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
           VIEW PROJECT
           </button>
         </Link>
     </div>
-    <div className='max-w-[420px] max-h-[400px] shadow-[0_4px_6px_rgba(0,0,0,0.3)]'>
+    <div className={`max-w-[420px] max-h-[400px] ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
       <img
         src='/images/project-photos/dotmap.png'
         alt='project display'
-        className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg shadow-[0_4px_6px_rgba(0,0,0,0.3)]'
+        className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
       />
     </div>
   </div>

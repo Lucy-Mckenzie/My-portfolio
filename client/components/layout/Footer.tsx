@@ -7,7 +7,7 @@ interface Props {
 export default function Footer({darkMode}: Props) {
 
   return (
-    <div className={`flex flex-col ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`flex flex-col ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
     <footer className='py-8'>
       <div className='container flex flex-row justify-between items-center font-manrope'>
         <p className='text-sm pl-32'>

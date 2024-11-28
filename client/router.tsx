@@ -11,6 +11,7 @@ import WeHike from './pages/Wehike'
 import SlothLibrary from './pages/SlothLibrary'
 import Dotmap from './pages/Dopmap'
 import Home from './pages/Home'
+import Resume from './pages/Resume'
 
 export const routes = createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -20,6 +21,7 @@ export const routes = createRoutesFromElements(
     <Route path='slothlibrary' element={<SlothLibrary />} />
     <Route path='dotmap' element={<Dotmap />} />
     <Route path='contact' element={<Contact />} />
+    <Route path='resume' element={<Resume />} />
   </Route>,
 )
 export const router = createBrowserRouter(routes)

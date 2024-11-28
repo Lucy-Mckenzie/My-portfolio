@@ -5,7 +5,7 @@ export default function WeHike() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#304954] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-5xl mx-auto text-center'>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
      We Hike: Your Ultimate Hiking Resource
@@ -23,7 +23,7 @@ export default function WeHike() {
       <img
        src='/images/project-photos/wehike.png'
         alt='we-hike project'
-        className='max-w-[900px] max-h-[900px] rounded-lg shadow-[0_8px_10px_rgba(0,0,0,0.25)] mb-16'>
+        className={`max-w-[700px] max-h-[700px] rounded-lg mb-16 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
       </img>
       </div>
       <div className='text-left mb-10'>
