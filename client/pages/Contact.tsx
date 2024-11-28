@@ -6,7 +6,8 @@ export default function Contact() {
 
   return (
     <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
-        <p>This is a place holder</p>
+        <h1>Get in touch (Click to copy)</h1>
+        <h2>Lucymckenzie62@gmail.com</h2>
     </div>
   )
 } 
