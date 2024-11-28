@@ -1,19 +1,35 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 
 export default function Layout() {
-  const [darkMode, setDarkMode] = useState<boolean>(true)
+  const [darkMode, setDarkMode] = useState<boolean>(false)
+  const location = useLocation()
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
 
+  const isSky = location.pathname === '/'
+
+  let backgroundColor = ''
+  let textColor = ''
+  
+  if (isSky) {
+    backgroundColor = darkMode ? 'bg-[#203a58]' : 'bg-[#63a6c6]' 
+    textColor = darkMode ? 'text-white' : 'text-black'
+  } else if (darkMode) {
+    backgroundColor = 'bg-[#203a58]' 
+    textColor = 'text-white'
+  } else {
+    backgroundColor = 'bg-[#fffbf9]'  
+  }
+
   return (
     <>
-    <div className={`min-h-screen ${darkMode ? 'bg-[#203a58] text-white' : 'bg-[#d5d5d6] text-black'}`}>
+   <div className={`min-h-screen ${backgroundColor} ${textColor}`}>
       <button onClick={toggleDarkMode} className="absolute z-20 flex right-10">
       <img
         src={darkMode ? '/images/icons/night-mode.png' : '/images/icons/light-mode.png'}
@@ -22,7 +38,7 @@ export default function Layout() {
           />
       </button>
       <div>
-      <Navbar darkMode={darkMode} />
+      <Navbar darkMode={darkMode} isSky={isSky} />
       <Outlet context={{ darkMode }} />
       <Footer darkMode={darkMode} />
       </div>
