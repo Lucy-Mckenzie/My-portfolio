@@ -10,7 +10,7 @@ export default {
         playfair: ['Playfair Display', 'serif'],
     },
     animation: {
-      'clouds-moving': 'moveClouds 60s linear infinite',
+      'clouds-moving': 'moveClouds 100s linear infinite',
     },
     keyframes: {
       moveClouds: {

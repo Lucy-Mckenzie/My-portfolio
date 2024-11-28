@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function DayNightToggle() {
-  const [day, setDay] = useState(false)
+  const [day, setDay] = useState(true)
 
   const toggleDayNight = () => {
     setDay((prev) => !prev)

@@ -4,99 +4,57 @@ export default function Clouds() {
     <img src='/images/clouds/cloud.png' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving' 
-    style={{ top: "10%", left: "20%" }}>
+    style={{ top: "-4%", left: "20%" }}>
     </img>
 
-    <img 
+     <img 
     src='/images/clouds/cloud.png'
      alt='cloud' className='absolute 
      left-1/2 max-w-[300px] max-h-[300px] animate-clouds-moving' 
-      style={{ top: "17%", left: "50%" }}>
+      style={{ top: "1%", left: "30%" }}>
       </img>
 
     <img 
-    src='/images/clouds/cloud2.png' alt='cloud'
-     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving' 
-     style={{ top: "50%", left: "10%" }}>
-     </img>
-
-    <img 
-    src='/images/clouds/cloud3.png' 
-    alt='cloud' 
-    className='absolute left-1/2 max-w-[500px] max-h-[500px] animate-clouds-moving' 
-    style={{ top: "70%", left: "60%" }}>
-    </img>
-
-    <img
-     src='/images/clouds/cloud.png' 
-     alt='cloud' 
-     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving'
-      style={{ top: "50%", left: "20%" }}>
-      </img>
-
-    <img
-     src='/images/clouds/cloud.png' 
-     alt='cloud'
-      className='absolute left-1/2 max-w-[300px] max-h-[300px] animate-clouds-moving' 
-       style={{ top: "30%", left: "70%" }}>
-       </img>
-
-    <img
-     src='/images/clouds/cloud2.png' 
-     alt='cloud' 
-     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving'
-      style={{ top: "17%", left: "70%" }}>
-      </img>
-
-    <img 
-    src='/images/clouds/cloud3.png'
-     alt='cloud' 
-     className='absolute left-1/2 max-w-[500px] max-h-[500px] animate-clouds-moving' 
-     style={{ top: "60%", left: "20%" }}>
-     </img>
-
-    <img
-     src='/images/clouds/cloud3.png' 
-     alt='cloud' 
-     className='absolute max-w-[500px] max-h-[500px] animate-clouds-moving'  
-     style={{ top: "10%", right: "30%" }}>
+    src='/images/clouds/cloud.png' alt='cloud'
+     className='absolute max-w-[800px] max-h-[400px] animate-clouds-moving' 
+     style={{ top: "10%", left: "10%" }}>
      </img>
 
     <img 
     src='/images/clouds/cloud.png' 
     alt='cloud' 
-    className='absolute max-w-[400px] max-h-[400px] animate-clouds-moving' 
-    style={{ top: "17%", right: "40%" }}>
-    </img>
-
-    <img 
-    src='/images/clouds/cloud2.png' 
-    alt='cloud' 
     className='absolute left-1/2 max-w-[500px] max-h-[500px] animate-clouds-moving' 
-    style={{ top: "10%", left: "8%" }}>
+    style={{ top: "1%", left: "50%" }}>
     </img>
 
     <img
-     src='/images/clouds/cloud3.png'
-      alt='cloud' 
-      className='absolute max-w-[500px] max-h-[500px] animate-clouds-moving' 
-       style={{ top: "69%", right: "20%" }}>
+     src='/images/clouds/cloud.png' 
+     alt='cloud' 
+     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving'
+      style={{ top: "40%", left: "20%" }}>
+      </img>
+
+    <img
+     src='/images/clouds/cloud.png' 
+     alt='cloud'
+      className='absolute left-1/2 max-w-[400px] max-h-[300px] animate-clouds-moving' 
+       style={{ top: "50%", left: "70%" }}>
        </img>
 
-    <img 
-    src='/images/clouds/cloud.png'
-     alt='cloud'
-      className='absolute max-w-[400px] max-h-[400px] animate-clouds-moving' 
-      style={{ top: "60%", right: "18%" }}>
+     <img
+     src='/images/clouds/cloud.png' 
+     alt='cloud' 
+     className='absolute max-w-[300px] max-h-[300px] animate-clouds-moving'
+      style={{ top: "40%", left: "90%" }}>
       </img>
 
     <img 
-    src='/images/clouds/cloud2.png'
+    src='/images/clouds/cloud.png'
      alt='cloud' 
      className='absolute left-1/2 max-w-[500px] max-h-[500px] animate-clouds-moving' 
-     style={{ top: "82%", right: "8%" }}>
+     style={{ top: "60%", left: "-1%" }}>
      </img>
-     
+    
     </div>
   )
 }
