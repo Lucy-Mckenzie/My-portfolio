@@ -11,7 +11,7 @@ return (
      <p className='text-4xl font-light font-manrope text-center mb-10'>
     My Skills
     </p>
-    <div className='overflow-hidden rounded-md max-w-[300px] max-h-[366px] flex items-center mt-2 shadow-[0_4px_6px_rgba(10,0.3,0.3,0.3)]'>
+    <div className={`overflow-hidden rounded-md max-w-[300px] max-h-[366px] flex items-center mt-2 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
       <img src='/images/Lucy-Mckenzie.png' alt='me' />
     </div>
     </div>
