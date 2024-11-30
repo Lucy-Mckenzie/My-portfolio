@@ -7,7 +7,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 export default function Layout() {
   const [darkMode, setDarkMode] = useState<boolean>(false)
   const location = useLocation()
-
+  
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }

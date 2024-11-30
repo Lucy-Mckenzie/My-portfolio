@@ -5,6 +5,10 @@ export default function Projects() {
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
+
   return (
     <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
      <p className='text-4xl font-extralight font-manrope text-center mb-40 pb-2 border-b-[0.5px] w-1/2 mx-auto'>
@@ -31,7 +35,9 @@ export default function Projects() {
         </p>
         <Link to='/wehike'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        onClick={scrollToTop}
+        >
           VIEW PROJECT
           </button>
         </Link>
@@ -65,7 +71,9 @@ export default function Projects() {
         </p>
         <Link to='/slothlibrary'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}
+        onClick={scrollToTop}
+        >
           VIEW PROJECT
           </button>
         </Link>
@@ -98,7 +106,9 @@ export default function Projects() {
         </p>
         <Link to='/dotmap'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        onClick={scrollToTop}
+        >
           VIEW PROJECT
           </button>
         </Link>
