@@ -26,6 +26,13 @@ export default function Dotmap() {
         className={`max-w-[700px] max-h-[700px] rounded-lg mb-16 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
       </img>
       </div>
+    <div className='pb-10 text-xl font-manrope'>
+    <a href='https://github.com/Lucy-Mckenzie/dotmap' target='_blank' rel='noopener noreferrer'
+    className='hover:font-light'
+    >
+    View Code
+    </a>
+    </div>
       <div className='text-left mb-10'>
       <h1 className='font-manrope pb-2 text-xl'>
         DESIGN BRIEF
@@ -33,13 +40,9 @@ export default function Dotmap() {
       <p 
       className='font-manrope'>
        This project was part of our 24-hour bootcamp group challenge. Collaborating in an international team, we quickly gravitated toward the idea of creating an app based around world maps. I pitched the idea of using Leaflet.js due to my prior experience with it.
-
+       < br/>
        Dotmap was designed with user interaction as the main focus. The app allows users to save desired locations on a map and personalize them with details. We built the frontend using React and TypeScript, which communicated with a Node.js backend through RESTful APIs.
-
        In our group of four, I took on the role of Git Keeper, managing merge conflicts and organizing pull requests. Another significant responsibility of mine was introducing the team to new technology — specifically, React Leaflet — and helping everyone get up to speed.
-
-        < br/>
-       
       </p>
       </div>
        <div className='text-left mb-10'>

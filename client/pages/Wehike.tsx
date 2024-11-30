@@ -26,8 +26,20 @@ export default function WeHike() {
         className={`max-w-[700px] max-h-[700px] rounded-lg mb-16 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
       </img>
       </div>
+      <div className='pb-10 space-x-14 font-manrope'>
+    <a href='https://github.com/Lucy-Mckenzie/We-Hike' target='_blank' rel='noopener noreferrer'
+    className='hover:font-semibold text-xl'
+    >
+    View Code
+    </a>
+    <a href='https://wehikenewzealand.com/' target='_blank' rel='noopener noreferrer'
+    className='hover:font-semibold text-xl'
+    >
+    View Website
+    </a>
+    </div>
       <div className='text-left mb-10'>
-      <h1 className='font-playfair pb-2 text-xl'>
+      <h1 className='font-manrope pb-2 text-xl'>
         DESIGN BRIEF
         </h1>
       <p 
