@@ -28,7 +28,7 @@ export default function WeHike() {
       </div>
       <div className='pb-10 space-x-14 font-manrope'>
     <a href='https://github.com/Lucy-Mckenzie/We-Hike' target='_blank' rel='noopener noreferrer'
-    className='hover:font-semibold text-xl'
+    className='hover:font-semibold text-xl font-light'
     >
     View Code
     </a>
