@@ -21,7 +21,7 @@ return (
   I love being in the creative flow.
   </p>
   <p className='mb-4 font-manrope'>
-    As a child, I was absolutely fascinated by various board games and, later on, computer games. I spent many hours absorbed in the art of games, always with one sole focus: solving the problem!
+    As a child, I was absolutely fascinated by board games, puzzles and anything to challenge my mind. Over time, this facination grew into a love for tackling increasingly difficult challenges. I spent many hours absorbed in the art of games and logical puzzles, always with one sole focus: solving the problem!
     With a passion for problem-solving, teaching, and negotiating, I quickly found myself right at home in the world of coding.
   </p>
   </div>
