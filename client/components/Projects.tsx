@@ -46,7 +46,7 @@ export default function Projects() {
       <img
         src='/images/project-photos/wehike.png'
         alt='project display'
-        className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:shadow-2xl hover:scale-110 rounded-lg`}
       />
     </div>
   </div>
