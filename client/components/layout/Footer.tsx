@@ -18,7 +18,7 @@ export default function Footer({darkMode}: Props) {
       <div className='flex flex-row space-x-8 justify-center items-center font-manrope'>
         <Link to='/about' className='mb-6'>About</Link>
         <Link to='/contact' className='mb-6'>Contact me</Link>
-        <Link to='/resume' className='mb-6'>Resume</Link>
+        {/* <Link to='/resume' className='mb-6'>Resume</Link> */}
       </div>
     </footer>
     </div>

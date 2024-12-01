@@ -23,7 +23,7 @@ export default function WeHike() {
       <img
        src='/images/project-photos/wehike.png'
         alt='we-hike project'
-        className={`max-w-[700px] max-h-[700px] rounded-lg mb-16 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'} `}>
+        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>
       </div>
       <div className='pb-10 space-x-14 font-manrope'>
@@ -44,17 +44,20 @@ export default function WeHike() {
         </h1>
       <p 
       className='font-manrope'>
-        This project was designed for the sole purpose of making hiking more accessible by viewing all track and hut information in one place. By integrating third-party APIs, users can easily access essential details about hiking locations. To extend the experience, statistics are layered over an interactive map, allowing users to see the best times to hike in specific regions. The project leverages React, React Leaflet.js, and GeoJSON to provide dynamic and informative mapping features.
-        < br/>
-        Additionally, accessibility was a key focus of this project. I aimed to ensure the website is usable by everyone, regardless of ability. To achieve this, I used the WAVE extension to identify and address any accessibility issues throughout the development process.
+        This project was designed for the sole purpose of making hiking more accessible by viewing all track and hut information in one place. By integrating <strong>third-party APIs</strong>, users can easily access essential details about hiking locations. To extend the experience, statistics are layered over an interactive map, allowing users to see the best times to hike in specific regions. The project leverages <strong>React, React Leaflet.js, and GeoJSON</strong> to provide dynamic and informative mapping features.
+        </p>
+        <p className='pt-4 font-manrope'>
+        Additionally, <strong>accessibility</strong> was a key focus of this project. I aimed to ensure the website is usable by everyone, regardless of ability. To achieve this, I used the WAVE extension to identify and address any accessibility issues throughout the development process.
       </p>
       </div>
        <div className='text-left mb-10'>
       <h2 className='pb-2'>TECH STACK AND EXPLAINATION</h2>
     <p className='font-manrope'>
-      The front end of the application was built using React, React Leaflet, and TypeScript to create a smooth, user-friendly interface. On the back end, Node.js and Express.js were chosen for their efficient server-side capabilities and seamless integration with the front end. 
-      The server communicates with the SQLite database through Knex.js for easy and efficient data management. JWT is used for secure user authentication.
-      To ensure platform stability and high-quality code, Test-Driven Development (TDD) was applied using Vitest for unit testing. Additionally, linting and TypeScript type checking were implemented to maintain clean and error-free code.
+      The front end of the application was built using React, React Leaflet, and <strong>TypeScript</strong> to create a smooth, user-friendly interface. On the back end, <strong>Node.js and Express.js</strong> were chosen for their efficient server-side capabilities and seamless integration with the front end. 
+      </p>
+      <p className='pt-4 font-manrope'>
+      The server communicates with the SQLite database through <strong>Knex.js</strong> for easy and efficient data management. JWT is used for secure user authentication.
+      To ensure platform stability and high-quality code, <strong>Test-Driven Development (TDD)</strong> was applied using <strong>Vitest</strong> for unit testing. Additionally, linting and TypeScript type checking were implemented to maintain clean and error-free code.
     </p>
       </div>
       <div className='text-left mb-10'>
@@ -66,7 +69,7 @@ export default function WeHike() {
         <div className='text-left mb-10'>
           <h2 className='pb-2'>PROBLEMS AND THOUGHT PROCESSES</h2>
           <p className='font-manrope'>
-          A significant challenge I encountered was accessing and displaying data from the API through the backend, particularly in mapping the coordinates. The data I received was in NZTM (New Zealand Transverse Mercator) format, which Leaflet—an international mapping library—does not natively support. Leaflet requires coordinates in the standard latitude and longitude format.
+          <strong>A significant challenge</strong> I encountered was accessing and displaying data from the API through the backend, particularly in mapping the coordinates. The data I received was in NZTM (New Zealand Transverse Mercator) format, which Leaflet—an international mapping library—does not natively support. Leaflet requires coordinates in the standard latitude and longitude format.
           To solve this, I used a package called proj4 to transform the coordinates from NZTM to WGS84, the coordinate system used by Leaflet. Once the transformation was complete, I was able to map the data and display it as pins on the map.
           </p>
         </div>
