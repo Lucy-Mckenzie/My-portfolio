@@ -23,7 +23,7 @@ export default function SlothLibrary() {
       <img
        src='/images/project-photos/slothli.png'
         alt='sloth library project'
-        className='max-w-[700px] max-h-[700px] rounded-lg mb-16'>
+        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>
       </div>
       <div className='pb-10 font-manrope'>

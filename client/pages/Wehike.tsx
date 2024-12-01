@@ -23,7 +23,7 @@ export default function WeHike() {
       <img
        src='/images/project-photos/wehike.png'
         alt='we-hike project'
-        className='max-w-[700px] max-h-[700px] rounded-lg mb-16'>
+        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>
       </div>
       <div className='pb-10 space-x-14 font-manrope'>

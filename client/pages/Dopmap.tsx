@@ -23,7 +23,7 @@ export default function Dotmap() {
       <img
        src='/images/project-photos/dotmap.png'
         alt='we-hike project'
-        className='max-w-[700px] max-h-[700px] rounded-lg mb-16'>
+        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>
       </div>
     <div className='pb-10 text-xl font-manrope'>
