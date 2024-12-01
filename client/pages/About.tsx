@@ -15,7 +15,7 @@ export default function About() {
           <img
           src='/images/Lucy-Mckenzie1.jpeg'
           alt='Lucy Mckenzie in action'
-          className='max-h-[500px] w-[375px] rounded'
+          className={`max-h-[500px] w-[375px] rounded ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
           ></img>
           </div>
         <div className='flex-1 text-left border border-gray-300 p-5 rounded'>
