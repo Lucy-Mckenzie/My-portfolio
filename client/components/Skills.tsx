@@ -7,12 +7,15 @@ export default function Skills() {
 
 return (
   <div className={`h-screen flex items-center justify-center ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
-    <div className='flex-1 max-w-[300px]'>
+    <div className='flex-1 max-w-[400px]'>
      <p className='text-4xl font-light font-manrope text-center mb-10'>
     My Skills
     </p>
-    <div className={`overflow-hidden rounded-md max-w-[300px] max-h-[366px] flex items-center mt-2 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
-      <img src='/images/Lucy-Mckenzie.png' alt='me' />
+    <div className={`overflow-hidden rounded-md flex items-center mt-2 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
+      <img 
+      src='/images/Lucy-Mckenzie.png'
+      alt='Lucy Mckenzie'
+        />
     </div>
     </div>
   <div className='flex flex-1 flex-col max-w-[700px] mt-20 ml-4'>
