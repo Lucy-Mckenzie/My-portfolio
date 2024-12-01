@@ -8,9 +8,9 @@ export default function Skills() {
 return (
   <div className={`h-screen flex items-center justify-center ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
     <div className='flex-1 max-w-[400px]'>
-     <p className='text-4xl font-light font-manrope text-center mb-10'>
+     <h1 className='text-4xl font-light font-manrope text-center mb-10'>
     My Skills
-    </p>
+    </h1>
     <div className={`overflow-hidden rounded-md flex items-center mt-2 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
       <img 
       src='/images/Lucy-Mckenzie.png'
@@ -20,11 +20,11 @@ return (
     </div>
   <div className='flex flex-1 flex-col max-w-[700px] mt-20 ml-4'>
   <Icons />
-  <p className='text-2xl font-semibold font-manrope mb-4'>
+  <h2 className='text-2xl font-semibold font-manrope mb-4'>
   I love being in the creative flow.
-  </p>
+  </h2>
   <p className='mb-4 font-manrope'>
-    As a child, I was absolutely fascinated by board games, puzzles and anything to challenge my mind. Over time, this facination grew into a love for tackling increasingly difficult challenges. I spent many hours absorbed in the art of games and logical puzzles, always with one sole focus: solving the problem!
+    As a child, I was absolutely fascinated by board games, puzzles and anything to challenge my mind. Over time, this facination grew into a love for tackling increasingly difficult challenges. I spent many hours absorbed in the art of games and logical puzzles, always with one sole focus: <strong>solving the problem! </strong>
     With a passion for problem-solving, teaching, and negotiating, I quickly found myself right at home in the world of coding.
   </p>
   </div>

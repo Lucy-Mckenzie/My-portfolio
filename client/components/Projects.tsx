@@ -11,17 +11,17 @@ export default function Projects() {
 
   return (
     <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
-     <p className='text-4xl font-extralight font-manrope text-center mb-40 pb-2 border-b-[0.5px] w-1/2 mx-auto'>
+     <h1 className='text-4xl font-extralight font-manrope text-center mb-40 pb-2 border-b-[0.5px] w-1/2 mx-auto'>
       Projects
-     </p>
+     </h1>
     <div className='flex items-center justify-center'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
-      <p className='text-xl font-light font-lato mb-9'>
+      <h2 className='text-xl font-light font-lato mb-9'>
         PERSONAL PROJECT
-      </p>
-        <p className='text-4xl font-manrope pb-6'>
+      </h2>
+        <h2 className='text-4xl font-manrope pb-6'>
           We Hike
-        </p>
+        </h2>
         <div className='flex flex-row space-x-2 mb-3'>
         <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
@@ -53,12 +53,12 @@ export default function Projects() {
 
   <div className='flex items-center justify-center my-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
-      <p className='font-light font-manrope text-xl mb-12'>
+      <h2 className='font-light font-manrope text-xl mb-12'>
         GROUP PROJECT / AGILE FACILITATOR
-      </p>
-        <p className='text-4xl font-manrope mb-4'>
+      </h2>
+        <h2 className='text-4xl font-manrope mb-4'>
           Sloth Library
-        </p>
+        </h2>
         <div className='flex flex-row space-x-2 mb-3'>
         <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
@@ -88,12 +88,12 @@ export default function Projects() {
     </div>
     <div className='flex items-center justify-center pb-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
-      <p className='text-xl font-light font-manrope mb-12'>
+      <h2 className='text-xl font-light font-manrope mb-12'>
         GROUP PROJECT / GIT KEEPER
-      </p>
-        <p className='text-4xl font-manrope mb-4'>
+      </h2>
+        <h2 className='text-4xl font-manrope mb-4'>
           dotmap
-        </p>
+        </h2>
         <div className='flex flex-row space-x-2 mb-3'>
         <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
         <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
