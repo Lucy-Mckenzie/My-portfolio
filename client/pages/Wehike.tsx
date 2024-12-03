@@ -21,9 +21,9 @@ export default function WeHike() {
       </p>
       <div className='flex justify-center'>
       <img
-       src='/images/project-photos/wehike.png'
+       src='/images/project-photos/wide.png'
         alt='we-hike project'
-        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
+        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
       </img>
       </div>
       <div className='pb-10 space-x-14 font-manrope'>
