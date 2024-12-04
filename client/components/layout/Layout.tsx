@@ -18,7 +18,7 @@ export default function Layout() {
   let textColor = ''
   
   if (isSky) {
-    backgroundColor = darkMode ? 'bg-[#203a58]' : 'bg-[#63a6c6]' 
+    backgroundColor = darkMode ? 'bg-[#203a58]' : 'bg-[#638cc0]' 
     textColor = darkMode ? 'text-white' : 'text-black'
   } else if (darkMode) {
     backgroundColor = 'bg-[#203a58]' 
