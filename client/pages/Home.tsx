@@ -24,7 +24,7 @@ export default function About() {
       <a href="https://github.com/Lucy-Mckenzie" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
         <img src="/images/icons/github.svg" alt="Github icon" className="w-7 h-7" />
       </a>
-      <a href="/contacts" className="transition-transform transform hover:scale-110">
+      <a href='/contact' className="transition-transform transform hover:scale-110">
         <img src="/images/icons/mail.svg" alt="Mail icon" className="w-7 h-7" />
       </a>
       <a href="https://www.linkedin.com/in/lucy-mckenzie-a08781317/" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">

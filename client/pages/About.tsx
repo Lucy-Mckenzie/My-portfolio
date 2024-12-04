@@ -52,7 +52,7 @@ export default function About() {
             <p className='font-manrope pb-4'> 
             <strong>Collaboration is at the heart of who I am.</strong> With a background in sales, management, and tourism, I excel at bridging the gap between technical and creative minds on any team. Encouraging and working successfully with others comes naturally to me.
             </p>
-             <p className='pb-4'>
+             <p className='pb-4 font-manrope'>
               With extensive customer service experience, my communication skills are top-notch, allowing me to work seamlessly alongside others. I have a strong sense of empathy, which helps me truly understand where others are coming from. My leadership in these collaborations has been one of the highlights of my career.
               I&apos;m always up for team board games or organizing a potluck to bring the team together. I believe team collaboration is one of the key foundations of a successful company.
             </p>
