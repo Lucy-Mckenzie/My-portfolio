@@ -37,7 +37,7 @@ export default function Clouds() {
     <img
      src='/images/clouds/cloud.png' 
      alt='cloud'
-      className='absolute left-1/2 max-w-[400px] max-h-[300px] animate-clouds-moving' 
+      className='absolute left-1/2 max-w-[400px] max-h-[300px] animate-clouds-moving'  
        style={{ top: "50%", left: "70%" }}>
        </img>
 
