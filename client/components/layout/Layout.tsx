@@ -30,9 +30,9 @@ export default function Layout() {
   return (
     <>
    <div className={`min-h-screen ${backgroundColor} ${textColor}`}>
-      <button onClick={toggleDarkMode} className="absolute z-20 flex right-10">
+      <button onClick={toggleDarkMode} className='absolute z-20 flex right-10 pt-2'>
       <img
-        src={darkMode ? '/images/icons/night-mode.png' : '/images/icons/light-mode.png'}
+        src={darkMode ? '/images/icons/moon.png' : '/images/icons/light-mode.png'}
         alt={darkMode ? 'Dark Mode' : 'Light Mode'}
         className='w-10 h-10'
           />
