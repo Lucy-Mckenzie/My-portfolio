@@ -34,6 +34,7 @@
     "git-filter-repo": "^0.0.30",
     "react-router-dom": "^7.0.1",
     "react-toggle-dark-mode": "^1.1.1",
+    "react-tooltip": "^5.28.0",
     "superagent": "^8.1.2",
     "three": "^0.170.0"
   },

@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Layout from './components/layout/Layout'
 import WeHike from './pages/Wehike'
+import MyCelium from './pages/MyCelium'
 import SlothLibrary from './pages/SlothLibrary'
 import Dotmap from './pages/Dopmap'
 import Home from './pages/Home'
@@ -18,6 +19,7 @@ export const routes = createRoutesFromElements(
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
     <Route path='wehike' element={<WeHike />} />
+    <Route path='mycelium' element={<MyCelium />} />
     <Route path='slothlibrary' element={<SlothLibrary />} />
     <Route path='dotmap' element={<Dotmap />} />
     <Route path='contact' element={<Contact />} />
