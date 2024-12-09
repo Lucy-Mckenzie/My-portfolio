@@ -61,11 +61,11 @@ export default function MyCelium() {
     <p>
   Managing a team of six, this approach was the most effective way to ensure that everyone was heard and supported.
     </p>
-    <p className='font-manrope my-4 text-lg'>Check out my part in the group presentation:</p>
+    {/* <p className='font-manrope my-4 text-lg'>Check out my part in the group presentation:</p>
   <video controls className='w-full max-w-xl mx-auto rounded shadow-lg'>
     <source src="/images/agile.mp4" type="video/mp4" />
     <track src="/agile.vtt" kind="subtitles" srcLang="en" label="English" />
-  </video>
+  </video> */}
       </div>
        <div className='text-left mb-10'>
       <h2 className='pb-2'>TECH STACK AND EXPLAINATION</h2>
