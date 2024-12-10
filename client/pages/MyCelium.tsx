@@ -14,7 +14,7 @@ export default function MyCelium() {
       4 minute read
       </p>
       <p className='font-manrope mb-9 text-left'>
-    
+      The game you just can&apos;t put down! Whether you are a plant lover or not, myCelium is for everyone. It is intuitive and simple. You plant the spores, watch them grow (by fertilising and watering), then harvest, sell at the market, and keep planting to your hearts content.
       </p>
       <div className='flex justify-center'>
       <img
@@ -53,19 +53,14 @@ export default function MyCelium() {
     <p className='font-manrope'>
     Myself and one other person were the Agile facilitators. Our task was to create systems and processes to ensure that everyone had work to do, no one encountered obstacles, and the workflow remained smooth. We held daily standups 3-4 times a day, where we asked three fundamental questions:
     </p>
-    <ul>
-   <li>&quot;What have you been working on?&quot;</li> 
-   <li>&quot;Have you run into any blocks?&quot;</li>
-   <li>&quot;What are you working on next?&quot;</li>
+    <ul className='py-2'>
+   <li className='font-manrope italic py-2'>- &quot;What have you been working on?&quot;</li> 
+   <li className='font-manrope italic py-2'>- &quot;Have you run into any blocks?&quot;</li>
+   <li className='font-manrope italic py-2'>- &quot;What are you working on next?&quot;</li>
     </ul>
-    <p>
+    <p className='font-manrope'>
   Managing a team of six, this approach was the most effective way to ensure that everyone was heard and supported.
     </p>
-    {/* <p className='font-manrope my-4 text-lg'>Check out my part in the group presentation:</p>
-  <video controls className='w-full max-w-xl mx-auto rounded shadow-lg'>
-    <source src="/images/agile.mp4" type="video/mp4" />
-    <track src="/agile.vtt" kind="subtitles" srcLang="en" label="English" />
-  </video> */}
       </div>
        <div className='text-left mb-10'>
       <h2 className='pb-2'>TECH STACK AND EXPLAINATION</h2>
