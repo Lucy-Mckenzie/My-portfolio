@@ -14,7 +14,7 @@ export default function MyCelium() {
       4 minute read
       </p>
       <p className='font-manrope mb-9 text-left'>
-    
+      The game you just can&apos;t put down! Whether you are a plant lover or not, myCelium is for everyone. It is intuitive and simple. You plant the spores, watch them grow (by fertilising and watering), then harvest, sell at the market, and keep planting to your hearts content.
       </p>
       <div className='flex justify-center'>
       <img
