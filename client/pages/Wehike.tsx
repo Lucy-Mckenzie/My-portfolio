@@ -15,7 +15,7 @@ export default function WeHike() {
       4 minute read
       </p>
       <p className='font-manrope mb-9 text-left'>
-      Growing up, hiking was a significant part of my life, making this project especially meaningful to me. Too often, I’ve encountered hikers unprepared for the trails—unaware of crucial details like distances, weather conditions, or hut closures. 
+      Growing up, hiking was a significant part of my life, making this project especially meaningful to me. Too often, I&apos;ve encountered hikers unprepared for the trails—unaware of crucial details like distances, weather conditions, or hut closures. 
         <br/>
       &quot;We Hike&quot; is designed to address these challenges. The platform allows users to sign in, save their favorite hikes, check real-time weather for specific areas, and stay updated on trail conditions.
       </p>
@@ -32,7 +32,7 @@ export default function WeHike() {
     >
     View Code
     </a>
-    <a href='https://lucy-2024-we-hike.devacademy.nz/' target='_blank' rel='noopener noreferrer'
+    <a href='https://www.wehikenewzealand.com/' target='_blank' rel='noopener noreferrer'
     className='hover:font-semibold text-xl font-light'
     >
     View Website
