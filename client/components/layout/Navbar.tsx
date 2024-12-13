@@ -12,7 +12,7 @@ export default function Nav({darkMode, isSky }: Props ) {
   let textColor = ''
 
   if (isSky) {
-    backgroundColor = darkMode ? 'bg-[#203a58]' : 'bg-[#638cc0]' 
+    backgroundColor = darkMode ? 'bg-[#203a58]' : 'bg-[#bfdbf7]' 
     textColor = darkMode ? 'text-white' : 'text-black'
   } else if (darkMode) {
     backgroundColor = darkMode ? 'bg-[#121212]' : 'bg-[#fffbf9]' 
