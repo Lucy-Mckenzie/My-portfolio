@@ -44,11 +44,19 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+      {darkMode ?
       <img
-        src='/images/project-photos/wehike.png'
+        src='/images/project-photos/wehiketransp.png'
         alt='project display'
         className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
       />
+      :
+      <img
+      src='/images/project-photos/wehike.png'
+      alt='project display'
+      className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
+    />
+      }
     </div>
   </div>
 
@@ -79,11 +87,19 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+      {darkMode ?
       <img
-        src='/images/project-photos/mycelium.png'
+        src='/images/project-photos/myceliumtransp.png'
         alt='project display'
         className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
       />
+      :
+      <img
+      src='/images/project-photos/mycelium.png'
+      alt='project display'
+      className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
+    />
+      }
     </div>
   </div>
 
@@ -115,11 +131,19 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+      {darkMode ?
       <img
-        src='/images/project-photos/slothli.png'
+        src='/images/project-photos/slothlitransp.png'
         alt='project display'
         className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
       />
+      :
+      <img
+      src='/images/project-photos/slothli.png'
+      alt='project display'
+      className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
+    />
+      }
       </div>
     </div>
     <div className='flex items-center justify-center pb-32'>
@@ -150,11 +174,19 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+      {darkMode ?
       <img
-        src='/images/project-photos/dotmap.png'
+        src='/images/project-photos/dotmaptransp.png'
         alt='project display'
         className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
       />
+      :
+      <img
+      src='/images/project-photos/dotmap.png'
+      alt='project display'
+      className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
+    />
+      }
     </div>
   </div>
     </div>

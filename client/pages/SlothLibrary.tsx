@@ -21,7 +21,7 @@ export default function SlothLibrary() {
       </p>
       <div className='flex justify-center'>
       <img
-       src='/images/project-photos/slothli.png'
+       src='/images/project-photos/slothlitransp.png'
         alt='sloth library project'
         className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>

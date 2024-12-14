@@ -21,7 +21,7 @@ export default function Dotmap() {
       </p>
       <div className='flex justify-center'>
       <img
-       src='/images/project-photos/dotmap.png'
+       src='/images/project-photos/dotmaptransp.png'
         alt='we-hike project'
         className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
       </img>
