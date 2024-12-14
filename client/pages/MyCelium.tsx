@@ -17,11 +17,19 @@ export default function MyCelium() {
       The game you just can&apos;t put down! Whether you are a plant lover or not, myCelium is for everyone. It is intuitive and simple. You plant the spores, watch them grow (by fertilising and watering), then harvest, sell at the market, and keep planting to your hearts content.
       </p>
       <div className='flex justify-center'>
+        {darkMode ? 
       <img
-       src='/images/project-photos/mycelium.png'
+       src='/images/project-photos/myceliumtransp.png'
         alt='myCelium project'
-        className='max-w-[60rem] max-h-[60rem] rounded-lg mb-16'>
+        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
       </img>
+      : 
+      <img 
+      src='/images/project-photos/myceliumwhite.png'
+      alt='myCelium project'
+       className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
+      </img>
+      }
       </div>
       <div className='pb-10 space-x-14 font-manrope'>
     <a href='https://github.com/Lucy-Mckenzie/myCelium' target='_blank' rel='noopener noreferrer'
