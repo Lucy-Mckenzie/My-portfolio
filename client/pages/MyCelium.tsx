@@ -19,13 +19,13 @@ export default function MyCelium() {
       <div className='flex justify-center'>
         {darkMode ? 
       <img
-       src='/images/project-photos/myceliumtransp.png'
+       src='/images/project-photos/myceliumwidetransp.png'
         alt='myCelium project'
         className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
       </img>
       : 
       <img 
-      src='/images/project-photos/myceliumwhite.png'
+      src='/images/project-photos/myceliumwidewhite.png'
       alt='myCelium project'
        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
       </img>
