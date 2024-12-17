@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useOutletContext } from 'react-router-dom'
 import SlothIcons from './icons/SlothLibrary-icons'
+import MyCeliumIcons from './icons/MyCelium-icons'
+import WeHikeIcons from './icons/WeHike-icons'
+import DotmapIcons from './icons/dotmap-icons'
 
 
 export default function Projects() {
@@ -25,13 +28,8 @@ export default function Projects() {
           We Hike
         </h2>
         <div className={`flex flex-row space-x-2 p-1 rounded w-56 ${darkMode ? 'bg-white' : '' }`}>
-        <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
-        <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
-        <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
-        <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
-        <img src="/images/icons/leaflet.svg" alt="leaflet icon" className="w-8 h-8" />
-        <img src="/images/icons/auth0.png" alt="auth0 icon" className="w-7 h-7" />
-     </div>
+        <WeHikeIcons />
+        </div>
         <p className='mb-4 font-manrope text-xl'>
           Discover information about your favorite hikes! Stay updated on recent alerts and log in to share reviews with friends.
         </p>
@@ -70,46 +68,7 @@ export default function Projects() {
           myCelium
         </h2>
         <div className={`flex flex-row space-x-2 p-1 rounded w-40 ${darkMode ? 'bg-white' : '' }`}>
-        <div className='relative group'>
-        <img 
-          src='/images/icons/react.svg'
-          alt='React icon'
-          className='w-7 h-7 hover:cursor-pointer'
-        />
-        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
-          React
-        </div>
-      </div>
-      <div className='relative group'>
-        <img 
-         src='/images/icons/tailwind.svg'
-          alt='Tailwind icon'
-          className='w-7 h-7 hover:cursor-pointer'
-        />
-        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
-          Tailwind CSS
-        </div>
-      </div>
-      <div className='relative group'>
-        <img 
-         src='/images/icons/typescript.svg'
-          alt='Tyescript icon'
-          className='w-7 h-7 hover:cursor-pointer'
-        />
-        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
-          Typescript
-        </div>
-      </div>
-      <div className='relative group'>
-        <img 
-         src='/images/icons/phaser.svg'
-          alt='Phaser icon'
-          className='w-7 h-7 hover:cursor-pointer'
-        />
-        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
-          Phaser.js
-        </div>
-      </div>
+       <MyCeliumIcons />
      </div>
         <p className='mb-4 font-manrope text-xl'>
           MyCelium is a game where you grow mushrooms and sell them at the market, you plant mushroom spores, and once grown you can harvest it! 
@@ -188,11 +147,7 @@ export default function Projects() {
           dotmap
         </h2>
         <div className={`flex flex-row space-x-2 p-1 rounded w-48 ${darkMode ? 'bg-white' : '' }`}>
-        <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
-        <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
-        <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
-        <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
-        <img src="/images/icons/leaflet.svg" alt="leaflet icon" className="w-8 h-8" />
+        <DotmapIcons />
      </div>
         <p className='mb-4 font-manrope text-xl'>
         Pin your favorite locations on the map with custom markers! Powered by Leaflet.js and SQLite, all your pins are securely saved, allowing you to share them with friends or keep them private.
