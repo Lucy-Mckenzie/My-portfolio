@@ -20,19 +20,19 @@ export default function About() {
           </div>
         <div className='flex-1 text-left border border-gray-300 p-5 rounded'>
           <p className='font-manrope pb-4'>
-        I am a creative designer and software developer based in New Zealand, in all works of art I aim for simplicity, intuative and minimalistic designs. I love the creative freedom Software Development and Design brings, an intuitive and <strong>addictive</strong> experience that I can&apos;t get enough of.
+            I&apos;m Lucy, a Software Developer based in New Zealand. I enjoy a balanced life, the fine dance between creativity and logic. This means listening to classical music while my mind works double-time crafting clean, organised code. 
        </p> 
        <p className='font-manrope pb-6'>
-        I love all things competitive and challenging, I find the flow of solving a problem something that I wake up excited to tackle every single day. 
+       With a love all things competitive and challenging, I find the flow of solving a problem something that I wake up excited to tackle every single day. 
         </p>
         </div>
         </div>
-        <div className='flex flex-col text-left'>
+        <div className='flex flex-col text-left border-b-[1px]'>
         <h2 className='font-manrope pb-2 text-xl mt-10'>
           MY PHILOSOPHY
         </h2>
         <p className='font-manrope pb-6'>
-        <strong>I believe that values and philosophy play a crucial role when selecting a new team member.</strong> Sharing my beliefs and principles is, therefore, very important to me.
+        <strong>I believe that values play a crucial role when selecting a new team member.</strong>
         Growing up in a big family, I learned the importance of communication, honesty, and trust. Alongside these values, one of my greatest strengths is my growth mindset. I&apos;ve always been naturally driven and deeply interested in the foundational concepts of neuroscience—<strong>where mindset is everything.</strong>
         To quote Seneca, &quot;The mind is the universe.&quot; I truly believe that the more patterns and connections you create, the broader your perception and understanding of the world becomes.
         </p>
@@ -40,12 +40,11 @@ export default function About() {
             MY JOURNEY
           </h2>
           <p className='font-manrope pb-6'>
-          I still remember the day programming truly clicked for me. Early in my career, I was exploring FreeCodeCamp and completed a challenge to build a product landing page. It was a basic project, but it gave me a basic understanding of how the internet works—something I had been eager to learn.
-          <br />
-          From there, I dove deeper, spending hours watching Harvard&apos;s Computer Science lectures. I was hooked! The simplicity of concepts like booleans—true or false, nothing more—just made sense to me. And who doesn’t love when things make sense?
-          Now, eight months into my journey as a software developer,<strong> I&apos;m more excited than ever about the future.</strong>  The endless learning opportunities ahead motivate me to keep growing and pushing myself every day.
+          I grew up playing Nancy Drew games, board games, and any mystery adventure book I could get my hands on. <strong>I love the unknown</strong>, the mysteries of the universe that we may never unravel. 
           </p>
-
+          <p className='font-manrope pb-6'>
+          Programming brings a thrill, something I can&apos;t quite put my finger on. All I know is that I found coding and everything clicked into place. Studying at Dev Academy only confirmed my drive for solving problems, innovation, and my place in the developing world.
+          </p>
           <h2 className='font-manrope pb-2 text-xl'>
             AS A COLLEAGUE
             </h2>
@@ -53,11 +52,11 @@ export default function About() {
             <strong>Collaboration is at the heart of who I am.</strong> With a background in sales, management, and tourism, I excel at bridging the gap between technical and creative minds on any team. Encouraging and working successfully with others comes naturally to me.
             </p>
              <p className='pb-4 font-manrope'>
-              With extensive customer service experience, my communication skills are top-notch, allowing me to work seamlessly alongside others. I have a strong sense of empathy, which helps me truly understand where others are coming from. My leadership in these collaborations has been one of the highlights of my career.
-              I&apos;m always up for team board games or organizing a potluck to bring the team together. I believe team collaboration is one of the key foundations of a successful company.
+              With extensive customer service and sales experience, my communication skills are top-notch, allowing me to work seamlessly alongside others. I have a strong sense of empathy, which helps me understand where others are coming from. My leadership in these collaborations has been one of the highlights of my career.
+              I&apos;m always up for team board games or a coffee chat. I believe team collaboration is one of the key foundations of a successful company.
             </p>
         </div>
-        <p className='font-manrope pb-6 text-left'>
+        <p className='font-manrope pb-6 text-left pt-3'>
         Thank you for taking the time to check out my work and learn a little more about me. I&apos;m open to any software development opportunities and can&apos;t wait to hear from you!
         </p>
     </div>
