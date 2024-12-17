@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useOutletContext } from 'react-router-dom'
+import SlothIcons from './icons/SlothLibrary-icons'
 
 
 export default function Projects() {
@@ -69,10 +70,46 @@ export default function Projects() {
           myCelium
         </h2>
         <div className={`flex flex-row space-x-2 p-1 rounded w-40 ${darkMode ? 'bg-white' : '' }`}>
-        <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
-        <img src="/images/icons/tailwind.svg" alt="tailwind icon" className="w-7 h-7" />
-        <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
-        <img src="/images/icons/phaser.svg" alt="phaser icon" className="w-8 h-8" />
+        <div className='relative group'>
+        <img 
+          src='/images/icons/react.svg'
+          alt='React icon'
+          className='w-7 h-7 hover:cursor-pointer'
+        />
+        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
+          React
+        </div>
+      </div>
+      <div className='relative group'>
+        <img 
+         src='/images/icons/tailwind.svg'
+          alt='Tailwind icon'
+          className='w-7 h-7 hover:cursor-pointer'
+        />
+        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
+          Tailwind CSS
+        </div>
+      </div>
+      <div className='relative group'>
+        <img 
+         src='/images/icons/typescript.svg'
+          alt='Tyescript icon'
+          className='w-7 h-7 hover:cursor-pointer'
+        />
+        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
+          Typescript
+        </div>
+      </div>
+      <div className='relative group'>
+        <img 
+         src='/images/icons/phaser.svg'
+          alt='Phaser icon'
+          className='w-7 h-7 hover:cursor-pointer'
+        />
+        <div className='absolute bottom-full mb-2 hidden group-hover:block bg-gray-500 text-white text-xs py-1 px-2 rounded'>
+          Phaser.js
+        </div>
+      </div>
      </div>
         <p className='mb-4 font-manrope text-xl'>
           MyCelium is a game where you grow mushrooms and sell them at the market, you plant mushroom spores, and once grown you can harvest it! 
@@ -112,12 +149,8 @@ export default function Projects() {
           Sloth Library
         </h2>
         <div className={`flex flex-row space-x-2 p-1 rounded w-48 ${darkMode ? 'bg-white' : '' }`}>
-        <img src="/images/icons/react.svg" alt='react icon' className="w-7 h-7" />
-        <img src="/images/icons/sqlite.svg" alt="sqlite icon" className="w-7 h-7" />
-        <img src="/images/icons/css3.svg" alt="css3 icon" className="w-7 h-7" />
-        <img src="/images/icons/html5.svg" alt="html5 icon" className="w-7 h-7" />
-        <img src="/images/icons/typescript.svg" alt="typescript icon" className="w-7 h-7" />
-     </div>
+          <SlothIcons />
+        </div>
         <p className='mb-4 font-manrope text-xl'>
           Enter your ID and book ID to check out a book from the Sloth Libraries. The database (SQLite is updated instantly) - just make sure you bring it back!
         </p>

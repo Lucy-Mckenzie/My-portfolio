@@ -1,4 +1,4 @@
-import Icons from '../components/Icons'
+import Icons from './icons/Icons'
 import { useOutletContext } from 'react-router-dom'
 
 export default function Skills() {
