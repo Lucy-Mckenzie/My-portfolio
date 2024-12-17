@@ -18,7 +18,7 @@ export default function About() {
       </h1>
     <Clouds />
     <p className='text-lg mt-2 py-3 z-10 text-left max-w-[600px]'>
-    A Software Developer specializing in modern, intuitive React websites... oh, and I have a small obsession with clouds!
+    I&apos;m a Software Developer specializing in innovative Digital Experience Platforms... oh, and I have a slight obsession with clouds—both the fluffy and the digital ones!
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
       <a href="https://github.com/Lucy-Mckenzie" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
@@ -33,15 +33,9 @@ export default function About() {
      </div>
       </div>
     </div>
-     <div >
      <Skills />
-   </div>
-   <div >
-        <Projects />
-      </div>
-      <div>
-        <Contact />
-      </div>
+      <Projects />
+     <Contact />
    </>
   )
 }
