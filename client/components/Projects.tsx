@@ -3,7 +3,7 @@ import { useOutletContext } from 'react-router-dom'
 import SlothIcons from './icons/SlothLibrary-icons'
 import MyCeliumIcons from './icons/MyCelium-icons'
 import WeHikeIcons from './icons/WeHike-icons'
-import DotmapIcons from './icons/dotmap-icons'
+import DotmapIcons from './icons/Dotmap-icons'
 
 
 export default function Projects() {
