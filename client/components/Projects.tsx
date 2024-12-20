@@ -35,12 +35,6 @@ export default function Projects() {
           Discover information about your favorite hikes! Stay updated on recent alerts and log in to share reviews with friends.
         </p>
         <Link to='/wehike'>
-        {/* <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
-        onClick={scrollToTop}
-        >
-          VIEW PROJECT
-          </button> */}
           <Button />
         </Link>
     </div>
@@ -79,12 +73,7 @@ export default function Projects() {
           MyCelium is a game where you grow mushrooms and sell them at the market, you plant mushroom spores, and once grown you can harvest it! 
         </p>
         <Link to='/mycelium'>
-        <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
-        onClick={scrollToTop}
-        >
-          VIEW PROJECT
-          </button>
+        <Button />
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
@@ -121,12 +110,7 @@ export default function Projects() {
           Enter your ID and book ID to check out a book from the Sloth Libraries. The database (SQLite is updated instantly) - just make sure you bring it back!
         </p>
         <Link to='/slothlibrary'>
-        <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
-        onClick={scrollToTop}
-        >
-          VIEW PROJECT
-          </button>
+        <Button />
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
@@ -162,12 +146,7 @@ export default function Projects() {
         Pin your favorite locations on the map with custom markers! Powered by Leaflet.js and SQLite, all your pins are securely saved, allowing you to share them with friends or keep them private.
         </p>
         <Link to='/dotmap'>
-        <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
-        onClick={scrollToTop}
-        >
-          VIEW PROJECT
-          </button>
+        <Button />
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
