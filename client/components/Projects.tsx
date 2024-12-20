@@ -4,6 +4,7 @@ import SlothIcons from './icons/SlothLibrary-icons'
 import MyCeliumIcons from './icons/MyCelium-icons'
 import WeHikeIcons from './icons/WeHike-icons'
 import DotmapIcons from './icons/Dotmap-icons'
+import Button from './Button'
 
 
 export default function Projects() {
@@ -34,12 +35,13 @@ export default function Projects() {
           Discover information about your favorite hikes! Stay updated on recent alerts and log in to share reviews with friends.
         </p>
         <Link to='/wehike'>
-        <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        {/* <button 
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
         onClick={scrollToTop}
         >
           VIEW PROJECT
-          </button>
+          </button> */}
+          <Button />
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
@@ -78,7 +80,7 @@ export default function Projects() {
         </p>
         <Link to='/mycelium'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
         onClick={scrollToTop}
         >
           VIEW PROJECT
@@ -120,7 +122,7 @@ export default function Projects() {
         </p>
         <Link to='/slothlibrary'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
         onClick={scrollToTop}
         >
           VIEW PROJECT
@@ -161,7 +163,7 @@ export default function Projects() {
         </p>
         <Link to='/dotmap'>
         <button 
-        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
+        className={`w-auto px-3 text-sm font-manrope py-2 rounded-md bg-slate-500 text-white border-black hover:text-gray-600 hover:bg-gray-300 hover:scale-105 transition-transform duration-200 hover:cursor-pointer ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}
         onClick={scrollToTop}
         >
           VIEW PROJECT
