@@ -18,7 +18,7 @@ export default function About() {
       </h1>
     <Clouds />
     <p className='text-lg mt-2 py-3 z-10 text-left max-w-[600px]'>
-    I&apos;m a Software Developer specializing in innovative Digital Experience Platforms... oh, and I have a slight obsession with clouds—both the fluffy and the digital ones!
+    I&apos;m a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
       <a href="https://github.com/Lucy-Mckenzie" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
