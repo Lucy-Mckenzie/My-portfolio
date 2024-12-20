@@ -43,6 +43,8 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+    <Link to='/wehike'
+     onClick={scrollToTop}>
       {darkMode ?
       <img
         src='/images/project-photos/wehiketransp.png'
@@ -56,6 +58,7 @@ export default function Projects() {
       className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
     />
       }
+      </Link>
     </div>
   </div>
 
@@ -83,6 +86,7 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+    <Link to='/mycelium' onClick={scrollToTop}>
       {darkMode ?
       <img
         src='/images/project-photos/myceliumtransp.png'
@@ -96,6 +100,7 @@ export default function Projects() {
       className={`transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg`}
     />
       }
+      </Link>
     </div>
   </div>
 
@@ -123,6 +128,7 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+    <Link to='/slothlibrary' onClick={scrollToTop}>
       {darkMode ?
       <img
         src='/images/project-photos/slothlitransp.png'
@@ -136,6 +142,7 @@ export default function Projects() {
       className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
     />
       }
+      </Link>
       </div>
     </div>
     <div className='flex items-center justify-center pb-32'>
@@ -162,6 +169,7 @@ export default function Projects() {
         </Link>
     </div>
     <div className='max-w-[520px] max-h-[400px]'>
+    <Link to='/dotmap' onClick={scrollToTop}>
       {darkMode ?
       <img
         src='/images/project-photos/dotmaptransp.png'
@@ -175,6 +183,7 @@ export default function Projects() {
       className='transform transition-transform duration-150 hover:translate-y-[-10px] hover:scale-110 rounded-lg'
     />
       }
+      </Link>
     </div>
   </div>
     </div>
