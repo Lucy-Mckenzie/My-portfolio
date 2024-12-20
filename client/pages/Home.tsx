@@ -11,8 +11,8 @@ export default function About() {
   return (
     <>
     <div 
-    className={`h-screen flex items-center justify-center text-center font-lato overflow-hidden ${darkMode ? 'bg-[#203a58] text-white' : 'bg-[#bfdbf7] text-black'}`}>
-      <div className='max-w-[700px] w-full flex flex-col text-left items-center overflow-hidden'>
+    className={`h-screen flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'bg-[#203a58] text-white' : 'bg-[#bfdbf7] text-black'}`}>
+      <div className='max-w-[700px] w-full flex flex-col text-left items-center'>
     <h1 className='font-light text-9xl font-lato z-10'>
       Hi, I&apos;m Lucy
       </h1>

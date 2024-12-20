@@ -29,7 +29,7 @@ export default function Layout() {
 
   return (
     <>
-   <div className={`min-h-screen ${backgroundColor} ${textColor}`}>
+   <div className={`min-h-screen w-full overflow-hidden ${backgroundColor} ${textColor}`}>
       <button onClick={toggleDarkMode} className='absolute z-20 flex right-10 pt-2'>
       <img
         src={darkMode ? '/images/icons/moon.png' : '/images/icons/light-mode.png'}
