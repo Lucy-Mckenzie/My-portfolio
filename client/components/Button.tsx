@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom"
+import { useOutletContext } from 'react-router-dom'
 
 export default function Button() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()

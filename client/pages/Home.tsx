@@ -1,8 +1,8 @@
-import Clouds from "../components/Clouds"
-import Projects from "../components/Projects"
+import Clouds from '../components/Clouds'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { useOutletContext } from 'react-router-dom'
-import Contact from "./Contact"
+import Contact from './Contact'
 
 export default function About() {
 
@@ -21,14 +21,14 @@ export default function About() {
     I&apos;m a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
-      <a href="https://github.com/Lucy-Mckenzie" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
-        <img src="/images/icons/github.svg" alt="Github icon" className="w-7 h-7" />
+      <a href='https://github.com/Lucy-Mckenzie' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
+        <img src='/images/icons/github.svg' alt='Github icon' className='w-7 h-7' />
       </a>
-      <a href='/contact' className="transition-transform transform hover:scale-110">
-        <img src="/images/icons/mail.svg" alt="Mail icon" className="w-7 h-7" />
+      <a href='/contact' className='transition-transform transform hover:scale-110'>
+        <img src='/images/icons/mail.svg' alt='Mail icon' className='w-7 h-7' />
       </a>
-      <a href="https://www.linkedin.com/in/lucy-mckenzie-a08781317/" target="_blank" className="transition-transform transform hover:scale-110" rel="noreferrer">
-        <img src="/images/icons/linkedin.svg" alt="Linkedin icon" className="w-7 h-7" />
+      <a href='https://www.linkedin.com/in/lucy-mckenzie-a08781317/' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
+        <img src='/images/icons/linkedin.svg' alt='Linkedin icon' className='w-7 h-7' />
       </a>
      </div>
       </div>

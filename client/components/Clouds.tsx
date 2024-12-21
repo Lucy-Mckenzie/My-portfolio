@@ -1,5 +1,5 @@
-import { motion } from "motion/react"
-import { useRef } from "react"
+import { motion } from 'motion/react'
+import { useRef } from 'react'
 
 export default function Clouds() {
   const constraintsRef = useRef<HTMLDivElement>(null)
@@ -10,7 +10,7 @@ export default function Clouds() {
     transition: {
       duration: 20,
       repeat: Infinity, 
-      ease: "linear", 
+      ease: 'linear', 
     },
   };
 
@@ -19,7 +19,7 @@ export default function Clouds() {
     <motion.img src='/images/clouds/cloud.webp' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] hover:cursor-pointer' 
-    style={{ top: "-4%", left: "20%" }}
+    style={{ top: '-4%', left: '20%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -30,7 +30,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp'
     alt='cloud' className='absolute 
     left-1/2 max-w-[300px] max-h-[300px] hover:cursor-pointer' 
-    style={{ top: "1%", left: "30%" }}
+    style={{ top: '1%', left: '30%' }}
     drag
     dragConstraints={constraintsRef} 
   animate={cloudAnimation}
@@ -41,7 +41,7 @@ export default function Clouds() {
     <motion.img 
     src='/images/clouds/cloud.webp' alt='cloud'
     className='absolute max-w-[800px] max-h-[400px] hover:cursor-pointer' 
-    style={{ top: "10%", left: "10%" }}
+    style={{ top: '10%', left: '10%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -52,7 +52,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp' 
     alt='cloud' 
     className='absolute left-1/2 max-w-[500px] max-h-[500px] hover:cursor-pointer' 
-    style={{ top: "1%", left: "50%" }}
+    style={{ top: '1%', left: '50%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -63,7 +63,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] hover:cursor-pointer'
-    style={{ top: "40%", left: "20%" }}
+    style={{ top: '40%', left: '20%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -75,7 +75,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp' 
     alt='cloud'
     className='absolute left-1/2 max-w-[400px] max-h-[300px] hover:cursor-pointer'  
-    style={{ top: "50%", left: "70%" }}
+    style={{ top: '50%', left: '70%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -87,7 +87,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] hover:cursor-pointer'
-    style={{ top: "40%", left: "90%" }}
+    style={{ top: '40%', left: '90%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
@@ -99,7 +99,7 @@ export default function Clouds() {
     src='/images/clouds/cloud.webp'
     alt='cloud' 
     className='absolute left-1/2 max-w-[500px] max-h-[500px] hover:cursor-pointer' 
-    style={{ top: "60%", left: "-1%" }}
+    style={{ top: '60%', left: '-1%' }}
     drag
     dragConstraints={constraintsRef} 
     animate={cloudAnimation}
