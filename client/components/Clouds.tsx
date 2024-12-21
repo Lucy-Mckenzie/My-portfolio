@@ -15,7 +15,7 @@ export default function Clouds() {
   };
 
   return (
-    <motion.div className='absolute top-0 left-0 w-full h-full overflow-hidden'  ref={constraintsRef}>
+    <motion.div className='absolute top-0 left-0 w-full h-full overflow-hidden' ref={constraintsRef}>
     <motion.img src='/images/clouds/cloud.png' 
     alt='cloud' 
     className='absolute max-w-[300px] max-h-[300px] hover:cursor-pointer' 
