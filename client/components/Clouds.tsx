@@ -8,7 +8,7 @@ export default function Clouds() {
     x: [0, 100, 200, 300, 400], 
     y: [0, -10, -20, -10, 0], 
     transition: {
-      duration: 10,
+      duration: 20,
       repeat: Infinity, 
       ease: "linear", 
     },
