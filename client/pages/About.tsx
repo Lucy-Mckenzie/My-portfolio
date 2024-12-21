@@ -32,9 +32,8 @@ export default function About() {
           MY PHILOSOPHY
         </h2>
         <p className='font-manrope pb-6'>
-        <strong>I believe that values play a crucial role when selecting a new team member.</strong>
-        Growing up in a big family, I learned the importance of communication, honesty, and trust. Alongside these values, one of my greatest strengths is my growth mindset. I&apos;ve always been naturally driven and deeply interested in the foundational concepts of neuroscience—<strong>where mindset is everything.</strong>
-        To quote Seneca, &quot;The mind is the universe.&quot; I truly believe that the more patterns and connections you create, the broader your perception and understanding of the world becomes.
+        Growing up, I was really shy. Presenting to people, and standing out in a group terrified me. That changed when I traveled around Australia with my family of six, home schooling along the way. 
+        This journey was a turning point in my life. I developed three fundamental skills: problem-solving, making friends, and taking control of my own life. <strong>These lessons shaped who I am today.</strong>
         </p>
           <h2 className='font-manrope pb-2 text-xl'>
             MY JOURNEY
@@ -43,7 +42,7 @@ export default function About() {
           I grew up playing Nancy Drew games, board games, and any mystery adventure book I could get my hands on. <strong>I love the unknown</strong>, the mysteries of the universe that we may never unravel. 
           </p>
           <p className='font-manrope pb-6'>
-          Programming brings a thrill, something I can&apos;t quite put my finger on. All I know is that I found coding and everything clicked into place. Studying at Dev Academy only confirmed my drive for solving problems, innovation, and my place in the developing world.
+          Programming brings a thrill, something I can&apos;t quite put my finger on. All I know is that I found coding and <strong>everything clicked into place.</strong> Studying at Dev Academy only confirmed my drive for solving problems, innovation, and my place in the developing world.
           </p>
           <h2 className='font-manrope pb-2 text-xl'>
             AS A COLLEAGUE
@@ -52,7 +51,6 @@ export default function About() {
             <strong>Collaboration is at the heart of who I am.</strong> With a background in sales, management, and tourism, I excel at bridging the gap between technical and creative minds on any team. Encouraging and working successfully with others comes naturally to me.
             </p>
              <p className='pb-4 font-manrope'>
-              With extensive customer service and sales experience, my communication skills are top-notch, allowing me to work seamlessly alongside others. I have a strong sense of empathy, which helps me understand where others are coming from. My leadership in these collaborations has been one of the highlights of my career.
               I&apos;m always up for team board games or a coffee chat. I believe team collaboration is one of the key foundations of a successful company.
             </p>
         </div>
