@@ -12,22 +12,6 @@ export default {
         manrope: ['Manrope', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
     },
-    animation: {
-      'clouds-moving': 'moveClouds 100s linear infinite',
-    },
-    keyframes: {
-      moveClouds: {
-        '0%': {
-          transform: 'translateX(-110%)',
-        },
-        '50%': {
-          transform: 'translateX(110%)'
-        },
-        '100%': {
-          transform: 'translateX(-110%)',
-        },
-      },
-    },
     darkMode: 'class',
   },
   },
