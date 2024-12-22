@@ -6,7 +6,7 @@ export default function Skills() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
 return (
-  <div className={`h-screen flex items-center justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+  <div className={`pb-32 flex items-center justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
     <div className='flex-1 max-w-[400px]'>
      <h1 className='text-4xl font-light font-manrope text-center mb-10'>
     My Skills
