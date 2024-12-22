@@ -5,7 +5,7 @@ export default function SlothLibrary() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-5xl mx-auto text-center'>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
     Sloth Library: The backend library manager 

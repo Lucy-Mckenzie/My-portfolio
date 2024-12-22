@@ -16,7 +16,7 @@ export default function Projects() {
 }
 
   return (
-    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`h-full m-0 p-0 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
      <h1 className={`text-4xl font-extralight font-manrope text-center mb-32 pb-2 w-1/2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
       Projects
      </h1>

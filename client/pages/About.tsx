@@ -5,7 +5,7 @@ export default function About() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#121212] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-[63rem] mx-auto text-center'>
       <h1 className='font-manrope text-center my-6 text-4xl'>
         More about me

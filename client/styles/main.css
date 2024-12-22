@@ -41,4 +41,34 @@ body {
   opacity: 1;
 }
 
+.hoverText {
+  transition: 0.65s font-weight, 0.65s color;
+}
 
+.hoverText:hover {
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
+.hoverText:hover + .hoverText,
+.hoverText:has(+ .hoverText:hover) {
+  font-weight: 500;
+  color: #638cc0;
+}
+
+.hoverText:hover + .hoverText + .hoverText,
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  font-weight: 300;
+}
+
+.gradientBackgroundDay {
+  background: linear-gradient(to bottom, #638cc0, #fffbf9);
+  min-height: 100vh; 
+  width: 100%;
+}
+
+.gradientBackgroundNight {
+  background: linear-gradient(to bottom, #203a58, #3d4451);
+  min-height: 100vh;
+  width: 100%;
+}

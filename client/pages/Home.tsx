@@ -11,14 +11,18 @@ export default function About() {
   return (
     <>
     <div 
-    className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'bg-[#203a58] text-white' : 'bg-[#bfdbf7] text-black'}`}>
+    className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
       <div className='max-w-[700px] w-full flex flex-col text-left items-center'>
-    <h1 className='font-light text-9xl font-lato z-10'>
-      Hi, I&apos;m Lucy
+    <h1 className='font-light text-9xl font-lato z-10 hover:cursor-pointer'>
+     Hi, I&apos;m Lucy
       </h1>
     <Clouds />
-    <p className='text-lg mt-2 py-3 z-10 text-left max-w-[600px]'>
-    I&apos;m a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!
+    <p className='text-lg mt-2 py-3 z-10 text-left max-w-[600px] hover:cursor-pointer'>
+      {"I'm a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!".split('').map((child, index) => (
+        <span className='hoverText' key={index}>
+          {child}
+        </span>
+      ))}
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
       <a href='https://github.com/Lucy-Mckenzie' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
