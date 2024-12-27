@@ -12,12 +12,12 @@ export default function About() {
     <>
     <div 
     className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
-      <div className='max-w-[700px] w-full flex flex-col text-left items-center'>
-    <h1 className='font-light text-9xl font-lato z-10 hover:cursor-pointer'>
+      <div className='lg:max-w-[700px] lg:w-full flex flex-col text-left items-center'>
+    <h1 className='font-light lg:text-9xl text-[180px] font-lato z-10 hover:cursor-pointer'>
      Hi, I&apos;m Lucy
       </h1>
     <Clouds />
-    <p className='text-lg mt-2 py-3 z-10 text-left max-w-[600px] hover:cursor-pointer'>
+    <p className='lg:text-lg text-4xl mt-2 py-3 z-10 text-left max-w-[600px] hover:cursor-pointer'>
       {"I'm a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!".split('').map((child, index) => (
         <span className='hoverText' key={index}>
           {child}
@@ -26,13 +26,13 @@ export default function About() {
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
       <a href='https://github.com/Lucy-Mckenzie' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
-        <img src='/images/icons/github.svg' alt='Github icon' className='w-7 h-7' />
+        <img src='/images/icons/github.svg' alt='Github icon' className='lg:w-7 lg:h-7 w-12 h-12' />
       </a>
       <a href='/contact' className='transition-transform transform hover:scale-110'>
-        <img src='/images/icons/mail.svg' alt='Mail icon' className='w-7 h-7' />
+        <img src='/images/icons/mail.svg' alt='Mail icon' className='lg:w-7 lg:h-7 w-12 h-12' />
       </a>
       <a href='https://www.linkedin.com/in/lucy-mckenzie-a08781317/' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
-        <img src='/images/icons/linkedin.svg' alt='Linkedin icon' className='w-7 h-7' />
+        <img src='/images/icons/linkedin.svg' alt='Linkedin icon' className='lg:w-7 lg:h-7 w-12 h-12' />
       </a>
      </div>
       </div>

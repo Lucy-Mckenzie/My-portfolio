@@ -24,9 +24,9 @@ export default function Nav({darkMode, isSky }: Props ) {
     <nav>
        <div className={`flex items-center px-3 justify-center z-2 pb-4 pt-4 ${backgroundColor} ${textColor}`}>
       <div className='px-9 flex items-center space-x-28 no-underline'>
-      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20' to='/'>HOME</NavLink>
-      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20' to='/about'>ABOUT</NavLink>
-      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20' to='/contact'>CONTACT</NavLink>
+      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20 lg:text-lg text-4xl' to='/'>HOME</NavLink>
+      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20 lg:text-lg text-4xl' to='/about'>ABOUT</NavLink>
+      <NavLink className='hover:underline font-manrope hover:text-gray-500 z-20 lg:text-lg text-4xl' to='/contact'>CONTACT</NavLink>
       </div>
       </div>
     </nav>
