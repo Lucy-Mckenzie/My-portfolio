@@ -12,7 +12,7 @@ export default function About() {
     <>
     <div 
     className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
-      <div className='lg:max-w-[700px] w-full flex flex-col text-left items-center'>
+      <div className='lg:max-w-[700px] lg:w-full flex flex-col text-left items-center'>
     <h1 className='font-light lg:text-9xl text-[180px] font-lato z-10 hover:cursor-pointer'>
      Hi, I&apos;m Lucy
       </h1>
