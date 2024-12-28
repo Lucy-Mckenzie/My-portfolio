@@ -5,9 +5,19 @@ import MyCeliumIcons from './icons/MyCelium-icons'
 import WeHikeIcons from './icons/WeHike-icons'
 import DotmapIcons from './icons/Dotmap-icons'
 import Button from './Button'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 
 
 export default function Projects() {
+  const ref = useRef<HTMLDivElement>(null)
+const { scrollYProgress } = useScroll({
+  target: ref,
+  offset: ['0 1', '1.33 1'],
+})
+
+const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 1])
+const scale = useTransform(scrollYProgress, [0.3, 0.6, 1], [0.95, 1, 1.1])
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
@@ -16,11 +26,19 @@ export default function Projects() {
 }
 
   return (
-    <div className={`h-full m-0 px-4 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <div
+    ref={ref}
+    className={`h-full m-0 px-4 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
      <h1 className={`text-4xl font-extralight font-manrope text-center mb-32 pb-2 w-1/2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
       Projects
      </h1>
-    <div className='flex items-center justify-center mb-32'>
+
+    <motion.div 
+     style={{
+      opacity,
+      scale
+     }}
+    className='flex items-center justify-center mb-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
       <h2 className='text-xl font-light font-lato mb-9'>
         PERSONAL PROJECT
@@ -56,9 +74,14 @@ export default function Projects() {
       }
       </Link>
     </div>
-  </div>
+  </motion.div>
 
-  <div className='flex items-center justify-center my-32'>
+  <motion.div 
+     style={{
+      opacity,
+      scale
+     }}
+     className='flex items-center justify-center my-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
       <h2 className='text-xl font-light font-lato mb-12'>
         GROUP PROJECT / AGILE FACILITATOR
@@ -93,9 +116,14 @@ export default function Projects() {
       }
       </Link>
     </div>
-  </div>
+  </motion.div>
 
-  <div className='flex items-center justify-center my-32'>
+  <motion.div 
+     style={{
+      opacity,
+      scale
+     }} 
+     className='flex items-center justify-center my-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
       <h2 className='font-light font-lato text-xl mb-12'>
         GROUP PROJECT / AGILE FACILITATOR
@@ -130,8 +158,14 @@ export default function Projects() {
       }
       </Link>
       </div>
-    </div>
-    <div className='flex items-center justify-center pb-32'>
+    </motion.div>
+
+    <motion.div 
+     style={{
+      opacity,
+      scale
+     }}
+      className='flex items-center justify-center pb-32'>
       <div className='flex flex-1 flex-col text-left max-w-[500px]'>
       <h2 className='text-xl font-light font-lato mb-12'>
         GROUP PROJECT / GIT KEEPER
@@ -166,7 +200,7 @@ export default function Projects() {
       }
       </Link>
     </div>
-  </div>
+  </motion.div>
     </div>
   )
 }
