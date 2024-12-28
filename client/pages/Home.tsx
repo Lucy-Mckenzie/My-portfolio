@@ -3,19 +3,35 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
+import { motion } from 'framer-motion'
 
 export default function About() {
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
-
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+      },
+    }),
+  }
+  
   return (
-    <>
+      <div
+  >
     <div 
     className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
       <div className='lg:max-w-[700px] lg:w-full flex flex-col text-left items-center'>
-    <h1 className='font-light lg:text-9xl text-[180px] font-lato z-10 hover:cursor-pointer'>
-     Hi, I&apos;m Lucy
-      </h1>
+      <h1 className='font-light lg:text-9xl text-[180px] font-lato z-10 hover:cursor-pointer'>
+  {"Hi, I'm Lucy".split('').map((char, i) => (
+    <motion.span key={i} custom={i} variants={textVariants} initial='hidden' animate='visible'>
+      {char}
+    </motion.span>
+  ))}
+</h1>
     <Clouds />
     <p className='lg:text-lg text-4xl mt-2 py-3 z-10 text-left max-w-[600px] hover:cursor-pointer'>
       {"I'm a Software Developer with a focus on intuitive and innovative websites... Oh, and I have a slight obsession with clouds!".split('').map((child, index) => (
@@ -40,6 +56,6 @@ export default function About() {
      <Skills />
       <Projects />
      <Contact />
-   </>
+   </div>
   )
 }
