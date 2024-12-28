@@ -20,8 +20,7 @@ export default function About() {
   }
   
   return (
-      <div
-  >
+      <div>
     <div 
     className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
       <div className='lg:max-w-[700px] lg:w-full flex flex-col text-left items-center'>
@@ -41,15 +40,33 @@ export default function About() {
       ))}
     </p>
     <div className='flex justify-start items-center space-x-2 z-10'>
-      <a href='https://github.com/Lucy-Mckenzie' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
-        <img src='/images/icons/github.svg' alt='Github icon' className='lg:w-7 lg:h-7 w-12 h-12' />
-      </a>
-      <a href='/contact' className='transition-transform transform hover:scale-110'>
-        <img src='/images/icons/mail.svg' alt='Mail icon' className='lg:w-7 lg:h-7 w-12 h-12' />
-      </a>
-      <a href='https://www.linkedin.com/in/lucy-mckenzie-a08781317/' target='_blank' className='transition-transform transform hover:scale-110' rel='noreferrer'>
-        <img src='/images/icons/linkedin.svg' alt='Linkedin icon' className='lg:w-7 lg:h-7 w-12 h-12' />
-      </a>
+    <motion.a
+  href="https://github.com/Lucy-Mckenzie"
+  target="_blank"
+  rel="noreferrer"
+  whileHover={{ scale: 1.2, rotate: 5 }}
+  whileTap={{ scale: 0.9 }}
+  >
+  <img src="/images/icons/github.svg" alt="Github icon" className="lg:w-7 lg:h-7 w-12 h-12" />
+  </motion.a>
+  <motion.a
+    href="/contact"
+    target="_blank"
+    rel="noreferrer"
+    whileHover={{ scale: 1.2, rotate: 5 }}
+    whileTap={{ scale: 0.9 }}
+    >
+    <img src="/images/icons/mail.svg" alt="Mail icon" className="lg:w-7 lg:h-7 w-12 h-12" />
+  </motion.a>
+  <motion.a
+    href="https://www.linkedin.com/in/lucy-mckenzie-a08781317/"
+    target="_blank"
+    rel="noreferrer"
+    whileHover={{ scale: 1.2, rotate: 5 }}
+    whileTap={{ scale: 0.9 }}
+    >
+    <img src="/images/icons/linkedin.svg" alt="LinkedIn icon" className="lg:w-7 lg:h-7 w-12 h-12" />
+  </motion.a>
      </div>
       </div>
     </div>
