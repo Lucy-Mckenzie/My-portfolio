@@ -42,7 +42,7 @@ body {
 }
 
 .hoverText {
-  transition: 0.65s font-weight, 0.65s color;
+  transition: font-weight 0.2s, color 0.2s;
 }
 
 .hoverText:hover {
@@ -50,16 +50,16 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.hoverText:hover + .hoverText,
-.hoverText:has(+ .hoverText:hover) {
+.hoverText:hover + .hoverText {
   font-weight: 500;
   color: #638cc0;
 }
 
-.hoverText:hover + .hoverText + .hoverText,
-.hoverText:has(+ .hoverText + .hoverText:hover) {
+.hoverText:hover + .hoverText + .hoverText {
   font-weight: 300;
+  color: #638cc0;
 }
+
 
 .gradientBackgroundDay {
   background: linear-gradient(to bottom, #638cc0, #fffbf9);
