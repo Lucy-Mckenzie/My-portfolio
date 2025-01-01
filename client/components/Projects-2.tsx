@@ -5,10 +5,8 @@ import 'slick-carousel/slick/slick-theme.css'
 import { useOutletContext } from 'react-router-dom'
 
 const photos = [
-  'images/mockups/mockup.png',
-  'images/mockups/mockup1.png',
-  'images/mockups/mockup2.png',
-  'images/mockups/mockup3.png'
+  'images/mockups/suncoastmain.png',
+  'images/mockups/suncoastpn.png'
 ]
 
 const settings = {
@@ -18,7 +16,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   speed: 1500,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
   cssEase: 'linear',
   afterChange: () => {} 
 }
@@ -28,17 +26,17 @@ export default function Projects2() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
   
 return (
-  <div  className={`h-full m-0 px-4 shadow-lg ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-  <div className="slider-card-container mx-auto max-w-[1300px] w-full p-5 shadow-lg rounded-xl">
+  <div  className={`h-screen m-0 items-center flex shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+  <div className="slider-card-container mx-auto lg:h-[1000px] max-w-[1200px] border border-black rounded-xl">
     <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
-        <div key={index} className='carousel-item relative'>
+        <div key={index} className='carousel-item relative flex justify-center items-center'>
           <img
             src={photoSrc}
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className=' lg:h-auto object-contain lg:max-h-[700px] h-[400px] rounded-lg'
+            className=' lg:h-auto object-fill lg:max-h-[750px] h-[400px] rounded-t-xl'
           />
         </div>
       ))}

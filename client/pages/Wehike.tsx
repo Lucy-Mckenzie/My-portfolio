@@ -20,7 +20,7 @@ export default function WeHike() {
       &quot;We Hike&quot; is designed to address these challenges. The platform allows users to sign in, save their favorite hikes, check real-time weather for specific areas, and stay updated on trail conditions.
       </p>
       <div className='flex justify-center'>
-        {darkMode ?
+        {/* {darkMode ?
       <img
        src='/images/project-photos/wehikewidetransp.png'
         alt='we-hike project'
@@ -32,7 +32,12 @@ export default function WeHike() {
        alt='we-hike project'
        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
      </img>
-      }
+      } */}
+        <img
+      src='/images/mockups/wehikelg.png'
+       alt='we-hike project'
+       className='max-w-[93rem] max-h-[73rem] rounded-md mb-16'>
+     </img>
       </div>
       <div className='pb-10 space-x-14 font-manrope'>
     <a href='https://github.com/Lucy-Mckenzie/We-Hike' target='_blank' rel='noopener noreferrer'

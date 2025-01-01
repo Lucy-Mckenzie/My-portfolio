@@ -1,5 +1,5 @@
 import Clouds from '../components/Clouds'
-// import Projects from '../components/Projects'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
@@ -72,7 +72,7 @@ export default function About() {
       </div>
     </div>
      <Skills />
-      {/* <Projects /> */}
+      <Projects />
       <Projects2 />
      <Contact />
    </div>
