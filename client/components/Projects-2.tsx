@@ -46,7 +46,8 @@ export default function Projects2() {
 }
   
 return (
-  <div className={`h-screen m-0 items-center flex shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+  <div 
+  className={`h-screen flex pb-14 items-center shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
   <div 
   className='slick-slider slider-card-container relative mx-auto lg:h-[850px] md:h-[600px] lg:max-w-[1200px] md:max-w-[600px] sm:max-w-[400px] border border-black rounded-xl'>
     <Slider {...settings} ref={sliderRef}>
@@ -54,7 +55,7 @@ return (
         <div key={index} className='carousel-item relative flex justify-center items-center hover:cursor-pointer z-0'
         tabIndex={-1}
         style={{ position: 'relative' }}
-        aria-hidden="false"
+        aria-hidden='false'
         >
         <Link
         to='/wehike'
@@ -82,11 +83,11 @@ return (
       left: mousePosition.x - 100,
     }}
     transition={{
-      type: "spring",
+      type: 'spring',
       stiffness: 280, 
       damping: 30, 
     }}
-      className='bg-gray-500 text-white text-xs py-1 px-2 rounded'
+      className='bg-white text-black text-xs py-1 px-2 rounded-lg'
     >
       View Project
     </motion.div>

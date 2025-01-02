@@ -5,6 +5,7 @@ import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
 import { motion } from 'framer-motion'
 import Projects2 from '../components/Projects-2'
+import Projects3 from '../components/Projects-3'
 
 export default function About() {
 
@@ -74,6 +75,7 @@ export default function About() {
      <Skills />
       <Projects />
       <Projects2 />
+      <Projects3 />
      <Contact />
    </div>
   )
