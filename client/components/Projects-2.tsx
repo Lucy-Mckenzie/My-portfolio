@@ -1,9 +1,10 @@
 import { Link, useOutletContext } from 'react-router-dom'
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { motion } from 'framer-motion'
+import MouseHover from './MouseHover'
 
 const photos = [
   'images/mockups/suncoastmain.png',
@@ -25,21 +26,7 @@ const settings = {
 export default function Projects2() {
   const sliderRef = useRef<Slider | null>(null)
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isImage, setIsImage] = useState(false)
-  
-
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      setMousePosition({ x: event.clientX, y: event.clientY })
-    }
-
-    document.addEventListener('mousemove', handleMouseMove)
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
 
   const scrollToTop = () => {
     window.scrollTo(0, 0)
@@ -72,25 +59,7 @@ return (
           />
           </Link>
           {isImage && (
-    <motion.div
-    style={{
-      position: 'absolute',
-      pointerEvents: 'none', 
-      zIndex: 50,
-    }}
-    animate={{
-      top: mousePosition.y + 40,  
-      left: mousePosition.x - 100,
-    }}
-    transition={{
-      type: 'spring',
-      stiffness: 280, 
-      damping: 30, 
-    }}
-      className='bg-white text-black text-xs py-1 px-2 rounded-lg'
-    >
-      View Project
-    </motion.div>
+    <MouseHover />
   )}
          <button 
        className='font-manrope absolute bottom-2 right-4 text-sm z-10 px-4 py-2 bg-white/20 backdrop-blur-md border border-white/40 rounded-full shadow-md transition duration-300 hover:bg-white/30 hover:border-white/60 hover:shadow-lg'>
