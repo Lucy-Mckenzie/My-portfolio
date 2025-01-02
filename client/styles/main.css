@@ -73,4 +73,8 @@ body {
   width: 100%;
 }
 
+.slick-slider{
+  z-index: 0 !important;
+
+}
 
