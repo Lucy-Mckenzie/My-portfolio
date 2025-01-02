@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import {  useEffect, useState } from 'react'
 
 export default function MouseHover() {
-  const [mousePosition, setMousePosition] = useState({ x: -9999, y: -9999 })
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -23,6 +23,8 @@ export default function MouseHover() {
       position: 'absolute',
       pointerEvents: 'none', 
       zIndex: 50,
+      width: 'auto', 
+      height: 'auto', 
     }}
     animate={{
       top: mousePosition.y + 40,  
