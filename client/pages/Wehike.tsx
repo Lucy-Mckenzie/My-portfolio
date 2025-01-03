@@ -26,14 +26,14 @@ export default function WeHike() {
        className='max-w-[93rem] max-h-[73rem] rounded-md mb-16'>
      </img>
       </div>
-      <div className='pb-10 space-x-14 font-manrope'>
+      <div className='flex pb-10 space-x-14 font-manrope justify-center'>
     <a href='https://github.com/Lucy-Mckenzie/We-Hike' target='_blank' rel='noopener noreferrer'
-    className='hover:font-semibold text-xl font-light'
+    className='text-xl font-light transition-transform duration-300 hover:scale-105'
     >
     View Code
     </a>
     <a href='https://www.wehikenewzealand.com/' target='_blank' rel='noopener noreferrer'
-    className='hover:font-semibold text-xl font-light'
+    className='text-xl font-light transition-transform duration-300 hover:scale-105'
     >
     View Website
     </a>

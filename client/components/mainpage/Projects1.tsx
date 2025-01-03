@@ -36,7 +36,7 @@ export default function Projects1() {
 return (
   <div 
   className={`min-h-screen flex flex-col items-center shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-    <h1 className={`lg:text-6xl font-extralight font-manrope w-3/4 text-center mb-10 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
+    <h1 className={`lg:text-6xl font-extralight font-manrope w-2/4 text-center mb-10 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
       PROJECTS
     </h1>
   <div 
@@ -49,7 +49,7 @@ return (
         aria-hidden='false'
         >
         <Link
-        to='/wehike'
+        to='/suncoastpatios'
         onClick={scrollToTop}
         >
           <motion.img
