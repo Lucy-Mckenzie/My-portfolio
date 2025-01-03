@@ -6,7 +6,7 @@ export default function SuncoastPatios() {
 
   return (
     <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-      <div className='max-w-5xl mx-auto text-center'>
+      <div className='max-w-6xl mx-auto text-center'>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
      Suncoast Patios: Specialising in comfortable outdoor living
     </h1>
@@ -14,16 +14,11 @@ export default function SuncoastPatios() {
     className='font-manrope test-sm text-left mb-10 underline'>
       4 minute read
       </p>
-      {/* <p className='font-manrope mb-9 text-left'>
-      Growing up, hiking was a significant part of my life, making this project especially meaningful to me. Too often, I&apos;ve encountered hikers unprepared for the trails—unaware of crucial details like distances, weather conditions, or hut closures. 
-        <br/>
-      &quot;We Hike&quot; is designed to address these challenges. The platform allows users to sign in, save their favorite hikes, check real-time weather for specific areas, and stay updated on trail conditions.
-      </p> */}
       <div className='flex justify-center'>
         <img
       src='/images/mockups/suncoastlg.png'
        alt='suncoast-patios project'
-       className='max-w-[93rem] max-h-[73rem] rounded-md mb-16'>
+       className='max-w-[93rem] max-h-[60rem] rounded-md mb-16'>
      </img>
       </div>
       <div className='flex pb-10 space-x-14 font-manrope justify-center'>
@@ -44,45 +39,62 @@ export default function SuncoastPatios() {
           View Website
         </a>
       </div>
-      <div className='text-left mb-10'>
-      <h1 className='font-manrope pb-2 text-xl'>
-        DESIGN BRIEF
-        </h1>
-        <p className='font-manrope'>
-          Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings.
-        </p>
-        <p className='pt-4 font-manrope'>
-          The new design focused on SEO optimisation, user-friendly interface design, and improved usability to better serve their audience.
-        </p>
-        <img
-        src='images/project-photos/suncoast-figma.png'
-        alt='figma planning'
-        className='w-1/2'
-        />
-      </div>
-       <div className='text-left mb-10'>
-      <h2 className='pb-2'>TECH STACK AND EXPLAINATION</h2>
-    <p className='font-manrope'>
-     
+      <div className='flex flex-col lg:flex-row items-start mb-10'>
+
+  <div className='flex-shrink-0 lg:w-3/5 mb-6 lg:mb-0'>
+    <img
+      src='images/project-photos/suncoast-figma.png'
+      alt='Figma planning'
+      className='w-full h-auto rounded-md shadow-lg'
+    />
+  </div>
+  
+  <div className='flex-1 lg:pl-10 text-left'>
+
+    <div className='mb-10'>
+      <h1 className='font-poppins text-xl pb-2'>DESIGN BRIEF</h1>
+      <p className='font-manrope'>
+        Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings.
       </p>
       <p className='pt-4 font-manrope'>
-      
+        The new design focused on SEO optimisation, user-friendly interface design, and improved usability to better serve their audience.
       </p>
-      </div>
-      <div className='text-left mb-10'>
-        <h2 className='pb-2'>WHO ARE WE SOLVING FOR?</h2>
-        <p className='font-manrope'>
-        Previously most of the cliental for this company was coming through word of mouth, the enquirys coming through online were next to none. 
-        This was due to a few reasons, the website was getting out of date. This affected the SEO, making the website return 9th on the list of outdoor brands in Hawkes Bay. 
-        </p>
-        </div>
-        <div className='text-left mb-10'>
-          <h2 className='pb-2'>PROBLEMS AND THOUGHT PROCESSES</h2>
-          <p className='font-manrope'>
-         
-          </p>
-        </div>
-      </div>
     </div>
+
+    <div className='mb-10'>
+      <h2 className='text-lg pb-2 font-poppins'>TECH STACK AND EXPLANATION</h2>
+      <p className='font-manrope pb-2'>
+      SEO optimisation was cruicial for this project, as well as server based rendering to ensure quick loading. I found Next.js to be the ideal framework for this. 
+      </p>
+      <p className='font-manrope'>
+      However, I had never touched it. I spent the first two weeks learnign the ins and outs of Next.js and quickly picked up its patterns. Its not only one I can add to my toolbelt but one I will continue using throughout.
+      </p>
+    </div>
+
+    <div className='mb-10'>
+      <h2 className='text-lg pb-2 font-poppins'>WHO ARE WE SOLVING FOR?</h2>
+      <p className='font-manrope pb-2'>
+        Previously, most of the clientele for this company came through word of mouth. Online inquiries were minimal due to the outdated website. The poor SEO caused the website to rank 9th among outdoor brands in Hawkes Bay.
+      </p>
+      <p className='font-manrope'>
+       The sole focus is to have a simple, dynamic website that users can easily navigate. With testimonials, many call to actions, we create a user flow that efortlessly brings clients to the enquiry form.
+      </p>
+    </div>
+
+    <div className='mb-10'>
+    <h2 className='text-lg pb-2 font-poppins'>PROBLEMS AND THOUGHT PROCESSES</h2>
+    <p className='font-manrope'>
+      Several aspects of this project were new territory for me:
+    </p>
+    <ul className='font-manrope list-disc pl-5'>
+      <li>Connecting a form to an email (Mailjet solved this problem).</li>
+      <li>Using Next.js to load files on the server via a file-based routing system (this involved a lot of trial, error, and Google searches).</li>
+      <li>Implementing a carousel (Slick Carousel solved this problem).</li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+</div>
   )
 } 
