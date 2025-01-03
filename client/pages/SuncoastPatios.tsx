@@ -1,4 +1,5 @@
 import { useOutletContext } from 'react-router-dom'
+import SuncoastCarousel from '../components/SuncoastCarousel'
 
 export default function SuncoastPatios() {
 
@@ -40,14 +41,6 @@ export default function SuncoastPatios() {
         </a>
       </div>
       <div className='flex flex-col lg:flex-row items-start mb-10'>
-
-  <div className='flex-shrink-0 lg:w-3/5 mb-6 lg:mb-0'>
-    <img
-      src='images/project-photos/suncoast-figma.png'
-      alt='Figma planning'
-      className='w-full h-auto rounded-md shadow-lg'
-    />
-  </div>
   
   <div className='flex-1 lg:pl-10 text-left'>
 
@@ -61,6 +54,9 @@ export default function SuncoastPatios() {
       </p>
     </div>
 
+    <div className='mb-10 w-full'>
+      <SuncoastCarousel />
+    </div>
     <div className='mb-10'>
       <h2 className='text-lg pb-2 font-poppins'>TECH STACK AND EXPLANATION</h2>
       <p className='font-manrope pb-2'>
