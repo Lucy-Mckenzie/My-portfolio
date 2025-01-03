@@ -1,6 +1,7 @@
 import { Link, useOutletContext } from 'react-router-dom'
 import { useState } from 'react'
 import MouseHover from '../MouseHover'
+import ViewCase from './ViewButton'
 
 export default function Projects2() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
@@ -36,17 +37,14 @@ export default function Projects2() {
             </button>
 
             <div className='p-4 text-left space-y-2'>
-            <h2 className='text-xs font-manrope'>CASE STUDY 03</h2>
+            <h2 className='text-xs font-manrope'>CASE STUDY 02</h2>
             <h1 className=' text-xl font-manrope'>
           <strong>We Hike:</strong> helps hikers stay prepared with saved trails and huts, <strong>real-time alerts</strong>, and trail updates—<strong>all in one place.</strong>
             </h1>
             <Link
             to='/wehike'
-            onClick={scrollToTop}
             >
-            <button className={`font-manrope relative lg:top-14 md:top-10 sm:top-10 right-1 text-md rounded-full border px-2 py-1 ${darkMode ? 'border-white hover:bg-white hover:text-black hover:border-white transition-all duration-[500ms]  ease-in-out' : 'border-black hover:bg-slate-950 hover:text-white hover:border-white transition-all duration-[500ms] ease-in-out'}`}>
-              View Case Study →
-            </button>
+            <ViewCase />
             </Link>
             </div>
           </div>
@@ -72,17 +70,14 @@ export default function Projects2() {
             </button>
 
             <div className='p-4 text-left space-y-2'>
-            <h2 className='text-xs font-manrope'>CASE STUDY 02</h2>
+            <h2 className='text-xs font-manrope'>CASE STUDY 03</h2>
             <h1 className=' text-xl font-manrope'>
             <strong>myCelium:</strong> The game you just <em>can&apos;t</em> put down! Whether you&apos;re a <strong>plant lover</strong> or not, myCelium is for everyone. 
             </h1>
             <Link
             to='/mycelium'
-            onClick={scrollToTop}
             >
-            <button className={`font-manrope relative lg:top-14 md:top-10 sm:top-10 right-1 text-md rounded-full border px-2 py-1 ${darkMode ? 'border-white hover:bg-white hover:text-black hover:border-white transition-all duration-[500ms]  ease-in-out' : 'border-black hover:bg-slate-950 hover:text-white hover:border-white transition-all duration-[500ms] ease-in-out'}`}>
-              View Case Study →
-            </button>
+           <ViewCase />
             </Link>
             </div>
           </div>

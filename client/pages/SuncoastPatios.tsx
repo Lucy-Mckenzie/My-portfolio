@@ -6,8 +6,8 @@ export default function SuncoastPatios() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
-    <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-      <div className='max-w-6xl mx-auto text-center'>
+    <div className={`flex flex-col h-full mx-auto space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+        <div className='max-w-6xl text-center mx-auto '>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
      Suncoast Patios: Specialising in comfortable outdoor living
     </h1>
@@ -40,23 +40,28 @@ export default function SuncoastPatios() {
           View Website
         </a>
       </div>
-      <div className='flex flex-col lg:flex-row items-start mb-10'>
-  
-  <div className='flex-1 lg:pl-10 text-left'>
+      </div>
 
-    <div className='mb-10'>
-      <h1 className='font-poppins text-xl pb-2'>DESIGN BRIEF</h1>
+  <div className='flex flex-col lg:flex-row items-start mb-10'>
+    <div className='text-left'>
+
+     <div className='mb-10 max-w-3xl mx-auto'>
+     <h1 className='font-poppins text-xl pb-2'>
+       DESIGN BRIEF
+      </h1>
       <p className='font-manrope'>
         Suncoast Patios needed a website revamp. The outdated design was being left behind in the digital graveyard, gradually slipping down the search engine rankings.
       </p>
       <p className='pt-4 font-manrope'>
         The new design focused on SEO optimisation, user-friendly interface design, and improved usability to better serve their audience.
       </p>
-    </div>
+  </div>
 
-    <div className='mb-10 w-full'>
+    <div className='mb-10 w-[100vw]'>
       <SuncoastCarousel />
     </div>
+
+    <div className='max-w-3xl mx-auto'>
     <div className='mb-10'>
       <h2 className='text-lg pb-2 font-poppins'>TECH STACK AND EXPLANATION</h2>
       <p className='font-manrope pb-2'>
