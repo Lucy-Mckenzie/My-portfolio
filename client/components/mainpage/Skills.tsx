@@ -8,9 +8,6 @@ export default function Skills() {
 return (
   <div className={`pb-32 px-4 flex items-center justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
     <div className='flex-1 lg:max-w-[400px]'>
-     <h1 className='lg:text-4xl text-6xl font-light font-manrope text-center mb-10'>
-    My Skills
-    </h1>
     <div className={`overflow-hidden rounded-md flex items-center mt-2 ${darkMode ?  'white-shadow' : 'shadow-[0_8px_10px_rgba(0,0,0,0.25)]'}`}>
       <img 
       src='/images/Lucy-Mckenzie.png'

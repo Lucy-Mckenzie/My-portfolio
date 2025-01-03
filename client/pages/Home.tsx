@@ -4,8 +4,8 @@ import Skills from '../components/mainpage/Skills'
 import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
 import { motion } from 'framer-motion'
-import Projects2 from '../components/mainpage/Projects2'
-import Projects3 from '../components/mainpage/Projects1'
+import Projects2 from '../components/mainpage/Projects1'
+import Projects3 from '../components/mainpage/Projects2'
 
 export default function About() {
 
