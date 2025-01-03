@@ -1,8 +1,8 @@
 import { Link, useOutletContext } from 'react-router-dom'
 import { useState } from 'react'
-import MouseHover from './MouseHover'
+import MouseHover from '../MouseHover'
 
-export default function Projects3() {
+export default function Projects1() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
   const [isImage, setIsImage] = useState(false)
 

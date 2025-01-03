@@ -4,7 +4,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { motion } from 'framer-motion'
-import MouseHover from './MouseHover'
+import MouseHover from '../MouseHover'
 import ButtonLive from './ButtonLive'
 
 const photos = [
