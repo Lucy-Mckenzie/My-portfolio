@@ -35,7 +35,7 @@ export default function MouseHover() {
       stiffness: 280, 
       damping: 30, 
     }}
-      className='bg-white text-black text-xs py-1 px-2 rounded-lg'
+      className='bg-white text-black text-xs py-1 px-2 rounded-lg whitespace-nowrap'
     >
       View Project
     </motion.div>

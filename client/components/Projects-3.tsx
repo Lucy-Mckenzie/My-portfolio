@@ -4,8 +4,7 @@ import MouseHover from './MouseHover'
 
 export default function Projects3() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
-  const [myceliumHovered, setMyceliumHovered] = useState(false)
-  const [weHikeHovered, setWeHikeHovered] = useState(false)
+  const [isImage, setIsImage] = useState(false)
 
     const scrollToTop = () => {
       window.scrollTo(0, 0)
@@ -24,10 +23,10 @@ export default function Projects3() {
               src='/images/mockups/myceliummain.png' 
               alt='Mycelium project' 
               className='w-full h-[600px] object-cover rounded-t-xl'
-              onMouseEnter={() => setMyceliumHovered(true)}
-              onMouseLeave={() => setMyceliumHovered(false)}
+              onMouseEnter={() => setIsImage(true)}
+              onMouseLeave={() => setIsImage(false)}
             />
-             {myceliumHovered && (
+             {isImage && (
               <MouseHover />
             )}
             </Link>
@@ -63,12 +62,9 @@ export default function Projects3() {
               src='/images/mockups/wehikemain.png' 
               alt='WeHike project' 
               className='w-full h-[600px] object-cover rounded-t-xl'
-              onMouseEnter={() => setWeHikeHovered(true)}
-              onMouseLeave={() => setWeHikeHovered(false)}
+              onMouseEnter={() => setIsImage(true)}
+              onMouseLeave={() => setIsImage(false)}
             /> 
-            {weHikeHovered && (
-              <MouseHover />
-            )}
             </Link>
               <button 
             className='font-manrope absolute bottom-52 right-2 text-sm z-10 px-4 py-2 bg-white/20 backdrop-blur-md border border-white/40 rounded-full shadow-md transition duration-300 hover:bg-white/30 hover:border-white/60 hover:shadow-lg'>
