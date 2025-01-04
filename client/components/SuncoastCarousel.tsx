@@ -4,9 +4,10 @@ const photos = [
   'images/suncoast/photo.png',
   'images/suncoast/photo1.png',
   'images/suncoast/photo2.png',
+  'images/suncoast/photo.png',
+  'images/suncoast/photo1.png',
+  'images/suncoast/photo2.png',
 ]
-
-const extendedPhotos = [...photos, ...photos]
 
 
 export default function SuncoastCarousel() {
@@ -18,7 +19,7 @@ return (
   <div 
     className='marquee-container relative w-[100vw] lg:h-[900px] h-[700px] overflow-hidden'>
     <div className='marquee-content flex'>
-      {extendedPhotos.map((photoSrc, index) => (
+      {photos.map((photoSrc, index) => (
         <div key={index} className='marquee-item flex items-center justify-center p-6 pt-20 '>
           <img
             src={photoSrc}
