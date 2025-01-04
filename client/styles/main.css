@@ -86,15 +86,12 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: scroll 30s linear infinite; 
-  width: 100vw;
+  animation: scroll 70s linear infinite; 
 }
 
 .marquee-content img {
-  flex-shrink: 0; 
-  margin: 37rem; 
+  margin: 36rem; 
   overflow: visible;
-  width: auto; 
   height: 900px;
   width: 100vw; 
   object-fit: cover; 
