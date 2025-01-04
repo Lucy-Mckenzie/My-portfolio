@@ -35,12 +35,12 @@ export default function Projects1() {
   
 return (
   <div 
-  className={`min-h-screen flex flex-col items-center shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-    <h1 className={`lg:text-6xl font-extralight font-manrope w-2/4 text-center mb-10 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
+  className={`h-auto flex flex-col items-center shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
+    <h1 className={`text-6xl font-extralight font-manrope w-2/4 text-center lg:mb-10 md:mb-5 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
       PROJECTS
     </h1>
   <div 
-  className='slick-slider slider-card-container relative mx-auto lg:h-[905px] md:h-[600px] lg:max-w-[1200px] md:max-w-[600px] sm:max-w-[400px] border border-black rounded-xl'>
+  className='slick-slider slider-card-container relative mx-auto lg:h-[905px] md:h-[750px] sm:h-[500px] lg:max-w-[1200px] md:max-w-[900px] sm:max-w-[100%] border border-black rounded-xl'>
     <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative flex justify-center items-center hover:cursor-pointer z-0 overflow-hidden'
@@ -57,7 +57,7 @@ return (
             alt={`Slide ${index + 1}`}
             width={1200}
             height={400}
-            className='lg:h-auto object-fill lg:max-h-[850px] sm:h-[400px] rounded-t-xl relative z-0' 
+            className='lg:h-auto object-fill lg:max-h-[850px] sm:h-[500px] rounded-t-xl relative z-0' 
             onMouseEnter={() => setIsImage(true)}
             onMouseLeave={() => setIsImage(false)}
           />
