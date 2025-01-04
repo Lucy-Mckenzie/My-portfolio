@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         sans: ['Lato', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
     },
     darkMode: 'class',
   },

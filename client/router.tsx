@@ -13,11 +13,13 @@ import SlothLibrary from './pages/SlothLibrary'
 import Dotmap from './pages/Dopmap'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
+import SuncoastPatios from './pages/SuncoastPatios'
 
 export const routes = createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
+    <Route path='suncoastpatios' element={<SuncoastPatios />} />
     <Route path='wehike' element={<WeHike />} />
     <Route path='mycelium' element={<MyCelium />} />
     <Route path='slothlibrary' element={<SlothLibrary />} />

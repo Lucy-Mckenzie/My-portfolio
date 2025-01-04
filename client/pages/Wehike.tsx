@@ -20,28 +20,20 @@ export default function WeHike() {
       &quot;We Hike&quot; is designed to address these challenges. The platform allows users to sign in, save their favorite hikes, check real-time weather for specific areas, and stay updated on trail conditions.
       </p>
       <div className='flex justify-center'>
-        {darkMode ?
-      <img
-       src='/images/project-photos/wehikewidetransp.png'
-        alt='we-hike project'
-        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
-      </img>
-      :
-      <img
-      src='/images/project-photos/wide.png'
+        <img
+      src='/images/mockups/wehikelg.png'
        alt='we-hike project'
-       className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
+       className='max-w-[93rem] max-h-[73rem] rounded-md mb-16'>
      </img>
-      }
       </div>
-      <div className='pb-10 space-x-14 font-manrope'>
+      <div className='flex pb-10 space-x-14 font-manrope justify-center'>
     <a href='https://github.com/Lucy-Mckenzie/We-Hike' target='_blank' rel='noopener noreferrer'
-    className='hover:font-semibold text-xl font-light'
+    className='text-xl font-light transition-transform duration-300 hover:scale-105'
     >
     View Code
     </a>
     <a href='https://www.wehikenewzealand.com/' target='_blank' rel='noopener noreferrer'
-    className='hover:font-semibold text-xl font-light'
+    className='text-xl font-light transition-transform duration-300 hover:scale-105'
     >
     View Website
     </a>
