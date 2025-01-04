@@ -93,6 +93,7 @@ body {
 .marquee-content img {
   flex-shrink: 0; 
   margin: 37rem; 
+  overflow: visible;
   width: auto; 
   height: 900px;
   width: 100vw; 

@@ -66,7 +66,12 @@ return (
           {isImage && (
     <MouseHover />
   )}
+    <Link
+     to='https://suncoast-patios-4ecd1fa1b515.herokuapp.com/'
+     target='_blank' rel='noopener noreferrer'
+     >
       <ButtonLive />
+      </Link>
         </div>
       ))}
     </Slider>
