@@ -1,11 +1,10 @@
 import Clouds from '../components/mainpage/Clouds'
-// import Projects from '../components/mainpage/Projects'
 import Skills from '../components/mainpage/Skills'
 import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
 import { motion } from 'framer-motion'
-import Projects2 from '../components/mainpage/Projects1'
-import Projects3 from '../components/mainpage/Projects2'
+import Projects1 from '../components/mainpage/Projects1'
+import Projects2 from '../components/mainpage/Projects2'
 
 export default function About() {
 
@@ -73,9 +72,8 @@ export default function About() {
       </div>
     </div>
      <Skills />
-      {/* <Projects /> */}
+      <Projects1 />
       <Projects2 />
-      <Projects3 />
      <Contact />
    </div>
   )
