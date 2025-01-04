@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { motion } from 'framer-motion'
 import MouseHover from '../MouseHover'
-import ButtonLive from './ButtonLive'
 import ViewCase from './ViewButton'
 
 const photos = [
@@ -70,7 +69,12 @@ return (
      to='https://suncoast-patios-4ecd1fa1b515.herokuapp.com/'
      target='_blank' rel='noopener noreferrer'
      >
-      <ButtonLive />
+       <button 
+       className='font-manrope absolute bottom-2 right-4 text-sm z-10 px-4 py-2 bg-white/20 backdrop-blur-md border border-white/40 rounded-full shadow-md transition duration-300 hover:bg-white/30 hover:border-white/60 hover:shadow-lg'
+       onClick={scrollToTop}
+       >
+        Live Website
+      </button> 
       </Link>
         </div>
       ))}
