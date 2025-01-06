@@ -5,6 +5,7 @@ import Contact from './Contact'
 import { motion } from 'framer-motion'
 import Projects1 from '../components/mainpage/Projects1'
 import Projects2 from '../components/mainpage/Projects2'
+import SEO from './Seo'
 
 export default function About() {
 
@@ -21,7 +22,13 @@ export default function About() {
   }
   
   return (
-      <div>
+<div>
+  <SEO 
+    title='Home - Lucy Mckenzie Portfolio'
+    description='Learn more about me, my skills, and my journey in software development.'
+    keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+    canonical='https://lucymckenziedev.com/'
+  />
     <div 
     className={`h-screen p-0 m-0 flex items-center justify-center text-center font-lato w-full overflow-hidden ${darkMode ? 'gradientBackgroundNight text-white' : 'gradientBackgroundDay text-black'}`}>
       <div className='lg:max-w-[700px] lg:w-full flex flex-col text-left items-center'>

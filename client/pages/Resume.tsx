@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
+import SEO from './Seo'
 
 export default function Resume() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
@@ -20,6 +21,13 @@ export default function Resume() {
   }, [])
 
   return (
+    <>
+      <SEO 
+        title='Resume - Lucy Mckenzie Portfolio'
+        description='Learn more about me, my skills, and my journey in software development.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/resume'
+      />
     <motion.div
     className={`flex justify-center items-center ${
       darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'
@@ -54,5 +62,6 @@ export default function Resume() {
       </a>
     </motion.div>
   </motion.div>
+  </>
   )
 }

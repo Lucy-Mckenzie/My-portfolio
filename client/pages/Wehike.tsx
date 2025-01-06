@@ -1,10 +1,18 @@
 import { useOutletContext } from 'react-router-dom'
+import SEO from './Seo'
 
 export default function WeHike() {
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
+    <>
+      <SEO 
+        title='We Hike - Lucy Mckenzie Portfolio'
+        description='A personal project of mine.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/wehike'
+      />
     <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-5xl mx-auto text-center'>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
@@ -79,5 +87,6 @@ export default function WeHike() {
         </div>
       </div>
     </div>
+    </>
   )
 } 

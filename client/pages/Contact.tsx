@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
+import SEO from './Seo'
 
 export default function Contact() {
 
@@ -17,6 +18,13 @@ export default function Contact() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
+    <>
+      <SEO 
+        title='Contact - Lucy Mckenzie Portfolio'
+        description='Learn more about me, my skills, and my journey in software development.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/contact'
+      />
     <div className={`flex flex-col w-full mx-auto p-6 space-y-6 py-40 items-center justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
         <motion.h1 
         className='font-manrope text-3xl text-left hover:cursor-pointer' 
@@ -31,5 +39,6 @@ export default function Contact() {
           {email}
         </motion.button>
     </div>
+    </>
   )
 } 

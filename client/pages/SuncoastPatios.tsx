@@ -1,11 +1,19 @@
 import { useOutletContext } from 'react-router-dom'
 import SuncoastCarousel from '../components/SuncoastCarousel'
+import SEO from './Seo'
 
 export default function SuncoastPatios() {
 
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
+    <>
+      <SEO 
+        title='Suncoast Patios - Lucy Mckenzie Portfolio'
+        description='A website created for a client of mine, Suncoast Patios.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/suncoastpatios'
+      />
     <div className={`flex flex-col h-full mx-auto space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
         <div className='lg:max-w-6xl md:max-w-5xl text-center mx-auto md:p-4'>
     <h1 className='font-manrope text-left font-semibold lg:text-4xl md:text-3xl md:w-9/12'>
@@ -97,5 +105,6 @@ export default function SuncoastPatios() {
 </div>
 </div>
 </div>
+</>
   )
 } 

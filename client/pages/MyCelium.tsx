@@ -1,9 +1,17 @@
 import { useOutletContext } from 'react-router-dom'
+import SEO from './Seo'
 
 export default function MyCelium() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
 
   return (
+    <>
+      <SEO 
+        title='myCelium - Lucy Mckenzie Portfolio'
+        description='A group project made with friends at Dev Academy.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/mycelium'
+      />
     <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-5xl mx-auto text-center'>
     <h1 className='font-manrope text-left font-semibold text-4xl'>
@@ -89,5 +97,6 @@ export default function MyCelium() {
         </div>
       </div>
     </div>
+    </>
   )
 } 

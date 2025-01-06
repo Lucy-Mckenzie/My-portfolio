@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useOutletContext } from 'react-router-dom'
+import SEO from './Seo'
 
 export default function About() {
 
@@ -16,6 +17,13 @@ export default function About() {
   }
 
   return (
+    <>
+      <SEO 
+        title='About - Lucy Mckenzie Portfolio'
+        description='Learn more about me, my skills, and my journey in software development.'
+        keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
+        canonical='https://lucymckenziedev.com/about'
+      />
     <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
       <div className='max-w-[63rem] mx-auto text-center'>
       <motion.h1 
@@ -139,5 +147,6 @@ export default function About() {
         </motion.p>
     </div>
     </div>
+    </>
   )
 } 
