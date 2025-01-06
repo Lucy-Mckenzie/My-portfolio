@@ -86,8 +86,9 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: scroll 70s linear infinite; 
+  animation: scroll 120s linear infinite; 
 }
+
 
 .marquee-content img {
   margin: 36rem; 
