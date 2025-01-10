@@ -70,9 +70,9 @@ export default function MyCelium() {
     Myself and one other person were the Agile facilitators. Our task was to create systems and processes to ensure that everyone had work to do, no one encountered obstacles, and the workflow remained smooth. We held daily standups 3-4 times a day, where we asked three fundamental questions:
     </p>
     <ul className='py-2'>
-   <li className='font-manrope italic py-2'>- &quot;What have you been working on?&quot;</li> 
-   <li className='font-manrope italic py-2'>- &quot;Have you run into any blocks?&quot;</li>
-   <li className='font-manrope italic py-2'>- &quot;What are you working on next?&quot;</li>
+   <li className='font-manrope py-2 list-disc list-inside'>&quot;What have you been working on?&quot;</li> 
+   <li className='font-manrope py-2 list-disc list-inside'>&quot;Have you run into any blocks?&quot;</li>
+   <li className='font-manrope py-2 list-disc list-inside'>&quot;What are you working on next?&quot;</li>
     </ul>
     <p className='font-manrope'>
   Managing a team of six, this approach was the most effective way to ensure that everyone was heard and supported.
