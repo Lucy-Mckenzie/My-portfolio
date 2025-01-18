@@ -1,6 +1,7 @@
 import { useOutletContext } from 'react-router-dom'
 import SuncoastCarousel from '../components/SuncoastCarousel'
 import SEO from './Seo'
+import Projects2 from '../components/mainpage/Projects2'
 
 export default function SuncoastPatios() {
 
@@ -76,7 +77,7 @@ export default function SuncoastPatios() {
       SEO optimisation was cruicial for this project, as well as server based rendering to ensure quick loading. I found <strong>Next.js</strong> to be the ideal framework for this. 
       </p>
       <p className='font-manrope'>
-      However, I had never touched it. I spent the first two weeks learnign the ins and outs of Next.js and quickly picked up its patterns. Its not only one I can add to my toolbelt but one I will continue using throughout my projects.
+      However, I had never touched it. I spent the first two weeks learning the ins and outs of Next.js and quickly picked up its patterns. Its not only one I can add to my toolbelt but one I will continue using throughout my projects.
       </p>
     </div>
 
@@ -92,18 +93,33 @@ export default function SuncoastPatios() {
 
     <div className='mb-10'>
     <h2 className='text-lg pb-2 font-poppins'>PROBLEMS AND THOUGHT PROCESSES</h2>
-    <p className='font-manrope'>
+    <h3 className='font-manrope text-md'>
       Several aspects of this project were new territory for me:
-    </p>
-    <ul className='font-manrope list-disc pl-5'>
-      <li>Connecting a form to an email (Mailjet solved this problem).</li>
-      <li>Using Next.js to load files on the server via a file-based routing system (this involved a lot of trial, error, and Google searches).</li>
-      <li>Implementing a carousel (Slick Carousel solved this problem).</li>
+    </h3>
+    <ul className='font-manrope list-disc pl-5 mb-2'>
+    <li className='mb-4'>
+  <strong>Receiving emails from the enquiry form: </strong>
+  I considered several approaches before deciding on the best option. The first was Nodemailer, a Node.js library that allows sending emails via SMTP. However, it lacks built-in email analytics and advanced spam protection, which were important to us. My other options were SendGrid and Mailjet, both cloud-based API and SMTP services. I ultimately chose Mailjet because it was the simplest to implement, offering built-in analytics and spam protection.
+    </li>
+    <li className='mb-4'>
+  <strong>Learning Next.js, when to load files on the client side:</strong>
+  {`Learning Next.js was a really fun part of the process. It's very intuitive and well-documented. However, when starting the project, I encountered errors and had the 'use client' directive (which means it renders on the frontend and makes it difficult for Google crawlers to find) in more files than I'd like to admit. That's when I started focusing on clean code practices, reducing reused code, and splitting larger components into smaller ones that would render on the client side. Overall, I believe Next.js significantly improved my code quality.`}
+    </li>
+      <li>
+        <strong>Managing Spam for enquiry form: </strong>
+        I was weighing up different options for this. My first idea was to create a custom solution from scratch. However, this proved to be quite challenging, and due to time constraints, it wasn’t feasible. So, I decided to use a library to help. When choosing between reCAPTCHA and hCaptcha, I found that the steps for both were quite similar, but I ultimately chose hCaptcha because it collects less data than Google’s reCAPTCHA. 
+        </li>
     </ul>
   </div>
   </div>
 </div>
 </div>
+<div className='text-center my-10 rounded-lg'> 
+      <h1 className='text-lg pb-2 font-manrope border-b-[1px] rounded-lg border-black'>
+       Explore more
+      </h1>
+      <Projects2 /> 
+    </div>
 </div>
 </>
   )
