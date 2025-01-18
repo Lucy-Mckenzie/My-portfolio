@@ -28,7 +28,7 @@ export default function SuncoastPatios() {
         <img
       src='/images/mockups/suncoastlg.webp'
        alt='suncoast-patios project'
-       className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[100vw] lg:max-h-[120vh] rounded-md mb-16'>
+       className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[95vw] lg:max-h-[120vh] rounded-md mb-16'>
      </img>
       </div>
       <div className='flex pb-10 space-x-14 font-manrope justify-center'>

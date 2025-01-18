@@ -19,16 +19,16 @@ export default function MyCelium() {
     </h1>
     <p 
     className='font-manrope test-sm text-left pb-5 underline'>
-      4 minute read
+      3 minute read
       </p>
-      <p className='font-manrope mb-9 text-left'>
+      {/* <p className='font-manrope mb-9 text-left'>
        Built under a week with a team of six, we were introduced to Phaser.js. It is intuitive and simple. You plant the spores, watch them grow (by fertilising and watering), then harvest, sell at the market, and keep planting to your hearts content. 
-      </p>
+      </p> */}
       <div className='flex justify-center'>
       <img
        src='/images/mockups/myceliumlg.png'
         alt='myCelium project'
-        className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[100vw] lg:max-h-[120vh] rounded-md mb-16'>
+        className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[95vw] lg:max-h-[120vh] rounded-md mb-16'>
       </img>
       </div>
       <div className='flex pb-10 space-x-14 font-manrope justify-center'>

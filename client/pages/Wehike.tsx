@@ -20,18 +20,18 @@ export default function WeHike() {
     </h1>
     <p 
     className='font-manrope test-sm text-left pb-5 underline'>
-      4 minute read
+      5 minute read
       </p>
-      <p className='font-manrope mb-9 text-left'>
+      {/* <p className='font-manrope mb-9 text-left'>
       Growing up, hiking was a significant part of my life, making this project especially meaningful to me. Too often, I&apos;ve encountered hikers unprepared for the trails—unaware of crucial details like distances, weather conditions, or hut closures. 
         <br/>
       &quot;We Hike&quot; is designed to address these challenges. The platform allows users to sign in, save their favorite hikes, check real-time weather for specific areas, and stay updated on trail conditions.
-      </p>
+      </p> */}
       <div className='flex justify-center'>
         <img
       src='/images/mockups/wehikelg.png'
        alt='we-hike project'
-       className='max-w-[93rem] max-h-[73rem] rounded-md mb-16'>
+       className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[95vw] lg:max-h-[120vh] rounded-md mb-16'>
      </img>
       </div>
       <div className='flex pb-10 space-x-14 font-manrope justify-center'>
