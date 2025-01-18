@@ -1,7 +1,7 @@
-## Welcome to my porfolio ☁️
+# Welcome to my porfolio ☁️
 I'm Lucy, a Software Developer based in New Zealand. I love building minimalistic websites with a focus on the small things, the attention to detail. This website is my creative outlet for when I get lost in the backend code, I'm learning three.js and motion.dev and slowly implementing things I have learnt.
 
-# Link to Website: https://lucymckenziedev.com/
+## Link to Website: https://lucymckenziedev.com/
 <img width="1493" alt="Screenshot of Portfolio" src="https://github.com/user-attachments/assets/39d2fdd0-9261-44a5-878e-c8ae1bb2a56b" />
 
 ## How it's made: 
