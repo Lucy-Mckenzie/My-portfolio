@@ -25,19 +25,11 @@ export default function MyCelium() {
        Built under a week with a team of six, we were introduced to Phaser.js. It is intuitive and simple. You plant the spores, watch them grow (by fertilising and watering), then harvest, sell at the market, and keep planting to your hearts content. 
       </p>
       <div className='flex justify-center'>
-        {darkMode ? 
       <img
-       src='/images/project-photos/myceliumwidetransp.png'
+       src='/images/mockups/myceliumlg.png'
         alt='myCelium project'
-        className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
+        className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[100vw] lg:max-h-[120vh] rounded-md mb-16'>
       </img>
-      : 
-      <img 
-      src='/images/project-photos/myceliumwidewhite.png'
-      alt='myCelium project'
-       className='max-w-[90rem] max-h-[80rem] rounded-lg mb-16'>
-      </img>
-      }
       </div>
       <div className='flex pb-10 space-x-14 font-manrope justify-center'>
     <a href='https://github.com/Lucy-Mckenzie/myCelium' target='_blank' rel='noopener noreferrer'
