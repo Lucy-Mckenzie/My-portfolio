@@ -58,7 +58,7 @@ export default function WeHike() {
         The Figma prototype below was one of my first designs. It relates to the user stories, and page navigation.
         </p>
         <img
-        src='images/project-photos/wehike-figma.png'
+        src='images/wehike-figma.png'
         alt='figma planning'
         />
       </div>
