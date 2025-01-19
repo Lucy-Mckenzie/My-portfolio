@@ -10,7 +10,9 @@ Tech used: HTML, CSS, TypeScript, React, TailwindCSS, React.
 I eagerly started coding this during boot camp and found myself getting very distracted building it. This project is some of my proudest work so far, I learnt how to make a website responsive, the basics of typography, spacing, and so many other Front-end Dev fundamentals. 
 
 # The process: 
-I could lie and say it all went well... but it didn't. My first problem was aligning everything, especially when changing to a responsive screen the text went everywhere. It turns out that items-center and justify-center are two different things. The night and day functionality took longer than I'd like to admit, this is when I came across the useContext hook, a game changer in React. The useContext hook allows you to make changes at a parent level to all children, meaning you don't have to individually pass props to every child. This is very useful for theme changing, it means that all pages can share the same state. 
+I could lie and say it all went well... but it didn't. My first problem was aligning everything, especially when changing to a responsive screen the text went everywhere. It turns out that items-center and justify-center are two different things. 
+
+The night and day functionality took longer than I'd like to admit, this is when I came across the useContext hook, a game changer in React. The useContext hook allows you to make changes at a parent level to all children, meaning you don't have to individually pass props to every child. This is very useful for theme changing, it means that all pages can share the same state. 
 
 I also learnt about optimising images, I used Google [Page Speed Insights](https://pagespeed.web.dev/) to check the functionality and speed of my website and found using webp to be a better solution than png. Improving performance and reducing load times. 
 
