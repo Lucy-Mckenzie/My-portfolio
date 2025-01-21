@@ -16,7 +16,7 @@ The night and day functionality took longer than I'd like to admit, this is when
 
 I also learnt about optimising images, I used Google [Page Speed Insights](https://pagespeed.web.dev/) to check the functionality and speed of my website and found using webp to be a better solution than png. Improving performance and reducing load times. 
 
-One part I am proud of is the projects page for Suncoast Patios, when you hover over the project on the main page a tooltip follows your mouse around which says View Project. The way I implemented the mouse follow was using clientX and clientY https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX, this finds the mouse position relative to the viewport both horizontal and vertical tracking where your mouse goes.
+One part I am proud of is the projects components - for a move in depth view of the code, [click here](#mouse-component). When you hover over the project on the main page a tooltip follows your mouse around which says View Project. The way I implemented the mouse follow was using clientX and clientY https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX, this finds the mouse position relative to the viewport both horizontal and vertical tracking where your mouse goes.
 
 # Optimisations
 I am constantly going in and refactoring code when I learn something new, a great example was using keyframes in my configcss file to animate the clouds. Instead of going to each cloud and animating them through the config file I used motion.ddev instead. This created a smoother cleaner transformation. 
@@ -29,3 +29,56 @@ The clouds may be a little jerky I plan to build a 3D world of clouds that you c
 2. Stratus—Going up in terms of altitude, we have Stratus. This is the big blanket cloud you find when you wake up and the sun has disappeared (if you live in England, you will know exactly what I am talking about). While dreary, clouds can be very beautiful (especially when you are climbing a mountain). So, the theme for this cloud is long and thin. The font changes to look longer, and the colours are a little greyer.
 
 3. Cirrus—The highest of all three, above 18.000ft. These are completely made of ice crystals where temperatures are below freezing. They are thin and wispy and normally associated with high winds (New Zealand gets a lot of these because of its being situated so remotely). They are elegant clouds and will, therefore, be an elegant theme, with kites dancing around the place because who doesn't love kites?
+
+## Mouse Component
+
+* The core purpose of the mouse hover is to follow the users mouse around with a tooltip, built using React, Framer.motion, and Mouse event handlers.
+
+To begin with I define the users mouse position using x (horizontal) and y (vertical) and useState
+
+```
+const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+```
+
+I then implement a useEffect which is an elegent way to only run when the component mounts to fetch the users mouse movement, so everytime the user moves their mouse the handleMouseMove function is called. When capture the current position using event.clientX and event.clientY which are properties of the mouseEvent, they allow you to track the users position relative to the screen. Updating the mousePosition stored in the useState above.
+
+```
+useEffect(() => {
+  const handleMouseMove = (event: MouseEvent) => {
+    setMousePosition({ x: event.clientX, y: event.clientY })
+  }
+
+  document.addEventListener('mousemove', handleMouseMove)
+
+  return () => {
+    document.removeEventListener('mousemove', handleMouseMove)
+  }
+}, [])
+```
+
+The next part is where the tooltip comes in, using position: absolute to make the position relative to the component, not the parent container. Pointer events: none means it won't block clicks when you click into the project. The animate positions the tooltip to follow the mouse as closely as possible. The transition settings allow you to change the characteristics of the tooltip following the mouse, e.g.: the higher the stiffness the stiffer the tooltip follows. 
+
+```
+<motion.div
+  style={{
+    position: 'absolute',
+    pointerEvents: 'none', 
+    zIndex: 50,
+    width: 'auto',
+    height: 'auto',
+  }}
+  animate={{
+    top: mousePosition.y + 40,  
+    left: mousePosition.x - 100,
+  }}
+  transition={{
+    type: 'spring',
+    stiffness: 280,
+    damping: 30,
+  }}
+  className='bg-white text-black text-xs py-1 px-2 rounded-lg whitespace-nowrap'
+>
+```
+
+Saving this into a component meant all I had to do was import it into other components and I could reuse it over and over. 
+
