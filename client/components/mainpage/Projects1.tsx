@@ -29,18 +29,32 @@ export default function Projects1() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
   const [isImage, setIsImage] = useState(false)
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0)
-}
+ const scrollToTop = () => {
+  window.scrollTo(0, 0)
+ }
+ const setMotion = {
+  hidden: { opacity: 0, y: 80 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }},
+ }
   
 return (
   <div 
   className={`h-auto flex flex-col items-center shadow-lg justify-center ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
-    <h1 className={`text-6xl font-extralight font-manrope w-2/4 text-center lg:mb-10 md:mb-5 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}>
+    <motion.h1 className={`text-6xl font-extralight font-manrope w-2/4 text-center lg:mb-10 md:mb-5 pb-2 mx-auto ${darkMode ? 'border-b-[0.5px] border-white' : 'border-b-[0.5px] border-gray-600'}`}
+      initial='hidden'
+      whileInView='visible'
+      variants={setMotion}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       PROJECTS
-    </h1>
-  <div 
-  className='slick-slider slider-card-container relative mx-auto lg:h-[905px] md:h-[750px] sm:h-[500px] lg:max-w-[1200px] md:max-w-[900px] sm:max-w-[100%] border border-black rounded-xl'>
+    </motion.h1>
+  <motion.div 
+  className='slick-slider slider-card-container relative mx-auto lg:h-[905px] md:h-[750px] sm:h-[500px] lg:max-w-[1200px] md:max-w-[900px] sm:max-w-[100%] border border-black rounded-xl'
+  initial='hidden'
+  whileInView='visible'
+  variants={setMotion}
+  viewport={{ once: true, amount: 0.2 }}
+  >
     <Slider {...settings} ref={sliderRef}>
       {photos.map((photoSrc, index) => (
         <div key={index} className='carousel-item relative flex justify-center items-center hover:cursor-pointer z-0 overflow-hidden'
@@ -90,7 +104,7 @@ return (
           <ViewCase />
           </Link>
     </div>
-  </div>
+  </motion.div>
   </div>
  )
 }

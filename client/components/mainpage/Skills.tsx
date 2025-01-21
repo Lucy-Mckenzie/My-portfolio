@@ -11,8 +11,8 @@ const textMotion = {
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }},
 }
 const photoMotion = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1.4, ease: 'easeOut' }},
+  hidden: { opacity: 0, y: 70 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }},
 }
 
 return (
@@ -34,7 +34,7 @@ return (
     initial='hidden'
     whileInView='visible'
     variants={textMotion}
-    viewport={{ amount: 0.5 }}
+    viewport={{ once: true, amount: 0.5 }}
   >
     <Icons />
       <h2 className='text-2xl font-semibold font-manrope mb-4'>
@@ -44,7 +44,7 @@ return (
      initial='hidden'
      whileInView='visible'
      variants={textMotion}
-     viewport={{ amount: 0.8 }}
+     viewport={{ once: true, amount: 0.3 }}
     >
       As a child, I was absolutely fascinated by board games, puzzles and anything to challenge my mind. Over time, this facination grew into a love for tackling increasingly difficult challenges. I quickly found myself right at home in the world of coding.
     </motion.p>

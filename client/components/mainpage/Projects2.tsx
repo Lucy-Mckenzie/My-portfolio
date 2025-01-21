@@ -3,6 +3,7 @@ import { useState } from 'react'
 import MouseHover from '../MouseHover'
 import ViewCase from './ViewButton'
 import Button from './ButtonLive'
+import { motion } from 'framer-motion'
 
 export default function Projects2() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
@@ -11,12 +12,21 @@ export default function Projects2() {
     const scrollToTop = () => {
       window.scrollTo(0, 0)
   }
+  const setMotion = {
+    hidden: { opacity: 0, y: 80 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' }},
+   }
 
   return (
       <div className={`w-full relative pb-10 pt-10 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
         <div className='flex flex-col lg:flex-row relative items-center justify-center gap-x-6 mx-auto px-4'>
 
-        <div className={`card relative rounded-box rounded-xl flex flex-col lg:h-[800px] md:h-[780px] sm:h-[760px] h-auto w-full max-w-xl ${darkMode ? 'border border-white' : 'border border-black'}`}>
+        <motion.div className={`card relative rounded-box rounded-xl flex flex-col lg:h-[800px] md:h-[780px] sm:h-[760px] h-auto w-full max-w-xl ${darkMode ? 'border border-white' : 'border border-black'}`}
+          initial='hidden'
+          whileInView='visible'
+          variants={setMotion}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <Link
             to='/wehike'
             onClick={scrollToTop}
@@ -50,11 +60,17 @@ export default function Projects2() {
             <ViewCase />
             </Link>
             </div>
-          </div>
+          </motion.div>
       
           <div className='divider divider-horizontal h-[800px] lg:block md:hidden'></div>
 
-          <div className={`card relative rounded-box rounded-xl flex flex-col lg:h-[800px] md:h-[780px] sm:h-[760px] h-auto w-full max-w-xl sm:mt-10 lg:mt-0 ${darkMode ? 'border border-white' : 'border border-black'}`}>
+          <motion.div 
+          className={`card relative rounded-box rounded-xl flex flex-col lg:h-[800px] md:h-[780px] sm:h-[760px] h-auto w-full max-w-xl sm:mt-10 lg:mt-0 ${darkMode ? 'border border-white' : 'border border-black'}`}
+          initial='hidden'
+          whileInView='visible'
+          variants={setMotion}
+          viewport={{ once: true, amount: 0.2 }}
+          >
             <Link
             to='/mycelium'
             onClick={scrollToTop}
@@ -84,7 +100,7 @@ export default function Projects2() {
            <ViewCase />
             </Link>
             </div>
-          </div>
+          </motion.div>
          
         </div>
       </div>
