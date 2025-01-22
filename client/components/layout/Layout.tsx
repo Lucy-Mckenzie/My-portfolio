@@ -29,8 +29,8 @@ export default function Layout() {
 
   return (
     <>
-   <div className={`min-h-screen w-full overflow-hidden ${backgroundColor} ${textColor}`}>
-      <button onClick={toggleDarkMode} className='absolute z-20 flex right-10 pt-2'>
+   <div className={`min-h-screen w-full ${backgroundColor} ${textColor}`}>
+      <button onClick={toggleDarkMode} className='absolute z-50 flex right-10 pt-2'>
       <img
         src={darkMode ? '/images/icons/moon.png' : '/images/icons/light-mode.png'}
         alt={darkMode ? 'Dark Mode' : 'Light Mode'}
@@ -38,7 +38,7 @@ export default function Layout() {
           />
       </button>
       <div>
-      <Navbar darkMode={darkMode} isSky={isSky} />
+      <Navbar isSky={isSky} />
       <Outlet context={{ darkMode }} />
       <Footer darkMode={darkMode} />
       </div>
