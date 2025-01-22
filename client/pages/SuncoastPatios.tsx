@@ -25,8 +25,8 @@ export default function SuncoastPatios() {
       4 minute read
       </p>
       <div className='flex justify-center'>
-        <img
-      src='/images/mockups/suncoastlg.webp'
+      <img
+       src='/images/mockups/suncoastlg.png'
        alt='suncoast-patios project'
        className='max-w-full max-h-[60vh] sm:max-w-[90vw] sm:max-h-[90vh] md:max-w-[90vw] md:max-h-[90vh] lg:max-w-[95vw] lg:max-h-[120vh] rounded-md mb-16'>
      </img>
