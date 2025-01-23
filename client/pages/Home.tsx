@@ -5,7 +5,8 @@ import { motion } from 'framer-motion'
 import Projects1 from '../components/mainpage/Projects1'
 import Projects2 from '../components/mainpage/Projects2'
 import SEO from './Seo'
-import VideoSalesLetter from '../components/mainpage/VideoSalesLetter'
+// import VideoSalesLetter from '../components/mainpage/VideoSalesLetter'
+import Skills from '../components/mainpage/Skills'
 
 export default function About() {
 
@@ -78,7 +79,8 @@ export default function About() {
      </div>
       </div>
     </div>
-     <VideoSalesLetter />
+    <Skills />
+     {/* <VideoSalesLetter /> */}
       <Projects1 />
       <Projects2 />
      <Contact />
