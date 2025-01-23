@@ -1,11 +1,11 @@
 import Clouds from '../components/mainpage/Clouds'
-import Skills from '../components/mainpage/Skills'
 import { useOutletContext } from 'react-router-dom'
 import Contact from './Contact'
 import { motion } from 'framer-motion'
 import Projects1 from '../components/mainpage/Projects1'
 import Projects2 from '../components/mainpage/Projects2'
 import SEO from './Seo'
+import VideoSalesLetter from '../components/mainpage/VideoSalesLetter'
 
 export default function About() {
 
@@ -78,7 +78,7 @@ export default function About() {
      </div>
       </div>
     </div>
-     <Skills />
+     <VideoSalesLetter />
       <Projects1 />
       <Projects2 />
      <Contact />
