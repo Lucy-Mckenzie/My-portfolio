@@ -6,6 +6,7 @@
   "description": "My software developer portfolio",
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "author": "Lucy Mckenzie",
+  "hasInstallScript": true,
   "license": "ISC",
   "scripts": {
     "start": "node dist/server.js",
