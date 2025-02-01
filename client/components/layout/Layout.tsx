@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from './Navbar.tsx'
+import Footer from './Footer.tsx'
 import { useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 
@@ -29,21 +29,21 @@ export default function Layout() {
 
   return (
     <>
-   <div className={`min-h-screen w-full ${backgroundColor} ${textColor}`}>
-      <button onClick={toggleDarkMode} className='absolute z-50 flex right-10 pt-2'>
-      <img
-        src={darkMode ? '/images/icons/moon.png' : '/images/icons/light-mode.png'}
-        alt={darkMode ? 'Dark Mode' : 'Light Mode'}
-        className='lg:w-12 lg:h-12 w-16 h-16'
+      <div className={`min-h-screen w-full ${backgroundColor} ${textColor}`}>
+        <button onClick={toggleDarkMode} className='absolute z-50 flex right-10 pt-2'>
+          <img
+            src={darkMode ? '/images/icons/moon.png' : '/images/icons/light-mode.png'}
+            alt={darkMode ? 'Dark Mode' : 'Light Mode'}
+            className='lg:w-12 lg:h-12 w-16 h-16'
           />
-      </button>
-      <div>
-      <Navbar isSky={isSky} />
-      <Outlet context={{ darkMode }} />
-      <Footer darkMode={darkMode} />
+        </button>
+        <div>
+          <Navbar isSky={isSky} />
+          <Outlet context={{ darkMode }} />
+          <Footer darkMode={darkMode} />
+        </div>
       </div>
-    </div>
-  </>
+    </>
   )
 }
 

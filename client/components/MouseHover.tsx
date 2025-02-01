@@ -18,27 +18,27 @@ export default function MouseHover() {
 
   return (
     <div>
-    <motion.div
-    style={{
-      position: 'absolute',
-      pointerEvents: 'none', 
-      zIndex: 50,
-      width: 'auto', 
-      height: 'auto', 
-    }}
-    animate={{
-      top: mousePosition.y + 40,  
-      left: mousePosition.x - 100,
-    }}
-    transition={{
-      type: 'spring',
-      stiffness: 280, 
-      damping: 30, 
-    }}
-      className='bg-white text-black text-xs py-1 px-2 rounded-lg whitespace-nowrap'
-    >
+      <motion.div
+        style={{
+          position: 'absolute',
+          pointerEvents: 'none', 
+          zIndex: 50,
+          width: 'auto', 
+          height: 'auto', 
+        }}
+        animate={{
+          top: mousePosition.y + 40,  
+          left: mousePosition.x - 100,
+        }}
+        transition={{
+          type: 'spring',
+          stiffness: 280, 
+          damping: 30, 
+        }}
+        className='bg-white text-black text-xs py-1 px-2 rounded-lg whitespace-nowrap'
+      >
       View Project
-    </motion.div>
+      </motion.div>
     </div>
   )}
  

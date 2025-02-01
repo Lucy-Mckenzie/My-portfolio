@@ -1,17 +1,16 @@
-/* eslint-disable react/jsx-key */
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
 } from 'react-router-dom'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Layout from './components/layout/Layout'
-import WeHike from './pages/Wehike'
-import MyCelium from './pages/MyCelium'
-import Home from './pages/Home'
-import Resume from './pages/Resume'
-import SuncoastPatios from './pages/SuncoastPatios'
+import About from './pages/About.tsx'
+import Contact from './pages/Contact.tsx'
+import Layout from './components/layout/Layout.tsx'
+import WeHike from './pages/Wehike.tsx'
+import MyCelium from './pages/MyCelium.tsx'
+import Home from './pages/Home.tsx'
+import Resume from './pages/Resume.tsx'
+import SuncoastPatios from './pages/SuncoastPatios.tsx'
 
 export const routes = createRoutesFromElements(
   <Route path='/' element={<Layout />}>

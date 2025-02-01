@@ -14,73 +14,73 @@ export default function Clouds() {
 
   return (
     <motion.div className='absolute top-0 left-0 w-full h-full overflow-hidden'>
-    <motion.img src='/images/clouds/cloud.webp' 
-    alt='cloud' 
-    className='absolute w-[300px] h-[150px] hover:cursor-pointer' 
-    style={{ top: '-4%', left: '20%' }}
-    animate={cloudAnimation}
-    >
-    </motion.img>
+      <motion.img src='/images/clouds/cloud.webp' 
+        alt='cloud' 
+        className='absolute w-[300px] h-[150px] hover:cursor-pointer' 
+        style={{ top: '-4%', left: '20%' }}
+        animate={cloudAnimation}
+      >
+      </motion.img>
 
-     <motion.img 
-    src='/images/clouds/cloud.webp'
-    alt='cloud' className='absolute 
+      <motion.img 
+        src='/images/clouds/cloud.webp'
+        alt='cloud' className='absolute 
     left-1/2 w-[400px] h-[200px] hover:cursor-pointer' 
-    style={{ top: '1%', left: '40%' }}
-    loading='lazy'
-    animate={cloudAnimation}
+        style={{ top: '1%', left: '40%' }}
+        loading='lazy'
+        animate={cloudAnimation}
       >
 
       </motion.img>
 
-    <motion.img 
-    src='/images/clouds/cloud.webp' alt='cloud'
-    className='absolute w-[600px] h-[300px] hover:cursor-pointer' 
-    style={{ top: '10%', left: '10%' }}
-    animate={cloudAnimation}
-     >
-     </motion.img>
+      <motion.img 
+        src='/images/clouds/cloud.webp' alt='cloud'
+        className='absolute w-[600px] h-[300px] hover:cursor-pointer' 
+        style={{ top: '10%', left: '10%' }}
+        animate={cloudAnimation}
+      >
+      </motion.img>
 
-    <motion.img 
-    src='/images/clouds/cloud.webp' 
-    alt='cloud' 
-    className='absolute left-1/2 w-[500px] h-[250px] hover:cursor-pointer' 
-    style={{ top: '50%', left: '50%' }}
-     loading='lazy'
-    animate={cloudAnimation}
-    >
-    </motion.img>
+      <motion.img 
+        src='/images/clouds/cloud.webp' 
+        alt='cloud' 
+        className='absolute left-1/2 w-[500px] h-[250px] hover:cursor-pointer' 
+        style={{ top: '50%', left: '50%' }}
+        loading='lazy'
+        animate={cloudAnimation}
+      >
+      </motion.img>
 
-    <motion.img
-    src='/images/clouds/cloud.webp' 
-    alt='cloud' 
-    className='absolute w-[400px] h-[200px] hover:cursor-pointer'
-    style={{ top: '40%', left: '-1%' }}
-    animate={cloudAnimation}
+      <motion.img
+        src='/images/clouds/cloud.webp' 
+        alt='cloud' 
+        className='absolute w-[400px] h-[200px] hover:cursor-pointer'
+        style={{ top: '40%', left: '-1%' }}
+        animate={cloudAnimation}
       >
 
       </motion.img>
 
-    <motion.img
-    src='/images/clouds/cloud.webp' 
-    alt='cloud'
-    className='absolute left-1/2 [400px] h-[250px] hover:cursor-pointer'  
-    style={{ top: '20%', left: '70%' }}
-    loading='lazy'
-    animate={cloudAnimation}
-       >
+      <motion.img
+        src='/images/clouds/cloud.webp' 
+        alt='cloud'
+        className='absolute left-1/2 [400px] h-[250px] hover:cursor-pointer'  
+        style={{ top: '20%', left: '70%' }}
+        loading='lazy'
+        animate={cloudAnimation}
+      >
 
-       </motion.img>
+      </motion.img>
 
-    <motion.img 
-    src='/images/clouds/cloud.webp'
-    alt='cloud' 
-    className='absolute left-1/2 w-[500px] h-[200px] hover:cursor-pointer' 
-    style={{ top: '60%', left: '-1%' }}
-    loading='lazy'
-    animate={cloudAnimation}
-     >
-     </motion.img>
+      <motion.img 
+        src='/images/clouds/cloud.webp'
+        alt='cloud' 
+        className='absolute left-1/2 w-[500px] h-[200px] hover:cursor-pointer' 
+        style={{ top: '60%', left: '-1%' }}
+        loading='lazy'
+        animate={cloudAnimation}
+      >
+      </motion.img>
     </motion.div>
   )
 }

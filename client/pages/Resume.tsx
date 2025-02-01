@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
-import SEO from './Seo'
+import SEO from './Seo.tsx'
 
 export default function Resume() {
   const { darkMode } = useOutletContext<{ darkMode: boolean }>()
@@ -28,40 +28,40 @@ export default function Resume() {
         keywords='portfolio, about, web developer, software developer, Next.js, React, Typescript'
         canonical='https://lucymckenziedev.com/resume'
       />
-    <motion.div
-    className={`flex justify-center items-center ${
-      darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'
-    }`}
-  >
-  {isImage && (
-    <motion.div
-      style={{
-        position: 'absolute',
-        top: mousePosition.y - 30, 
-        left: mousePosition.x + 10,
-        pointerEvents: 'none', 
-        zIndex: 10,
-      }}
-      className='bg-gray-500 text-white text-xs py-1 px-2 rounded'
-    >
-      Click to download
-    </motion.div>
-  )}
-    <motion.div 
-    onMouseEnter={() => setIsImage(true)}
-    onMouseLeave={() => setIsImage(false)}
-    className='relative group'> 
-      <a
-        className='hover:text-gray-500'
-        href='/images/Resume.pdf'
-        download='Resume-Lucy-Mckenzie.pdf'
+      <motion.div
+        className={`flex justify-center items-center ${
+          darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'
+        }`}
       >
-        <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
-          <img src='/images/resume.png' alt='resume' />
-        </div>
-      </a>
-    </motion.div>
-  </motion.div>
-  </>
+        {isImage && (
+          <motion.div
+            style={{
+              position: 'absolute',
+              top: mousePosition.y - 30, 
+              left: mousePosition.x + 10,
+              pointerEvents: 'none', 
+              zIndex: 10,
+            }}
+            className='bg-gray-500 text-white text-xs py-1 px-2 rounded'
+          >
+      Click to download
+          </motion.div>
+        )}
+        <motion.div 
+          onMouseEnter={() => setIsImage(true)}
+          onMouseLeave={() => setIsImage(false)}
+          className='relative group'> 
+          <a
+            className='hover:text-gray-500'
+            href='/images/Resume.pdf'
+            download='Resume-Lucy-Mckenzie.pdf'
+          >
+            <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
+              <img src='/images/resume.png' alt='resume' />
+            </div>
+          </a>
+        </motion.div>
+      </motion.div>
+    </>
   )
 }

@@ -5,7 +5,6 @@ import { RouterProvider } from 'react-router-dom'
 
 import { router } from './router'
 
-
 const queryClient = new QueryClient()
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,6 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
       <RouterProvider router={router} />
       <ReactQueryDevtools />
     </QueryClientProvider>
-
   )
 })
