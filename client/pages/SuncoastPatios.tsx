@@ -41,7 +41,7 @@ export default function SuncoastPatios() {
           View Code
             </a>
             <a 
-              href='https://suncoast-patios-4ecd1fa1b515.herokuapp.com/' 
+              href='https://suncoastpatios.co.nz/' 
               target='_blank' 
               rel='noopener noreferrer' 
               className='text-xl font-light transition-transform duration-300 hover:scale-105'
