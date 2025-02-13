@@ -59,6 +59,9 @@ export default function Resume() {
             <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
               <img src='/images/resume.png' alt='resume' />
             </div>
+            <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
+              <img src='/images/resume1.png' alt='resume' />
+            </div>
           </a>
         </motion.div>
       </motion.div>
