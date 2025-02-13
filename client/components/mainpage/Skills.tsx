@@ -39,8 +39,7 @@ export default function Skills() {
             variants={textMotion}
             viewport={{ once: true, amount: 0.1 }}
           >
-      I&apos;m proficient in various modern technologies that empower me to build scalable functional solutions.
-      These are some of my main technologies.
+      I&apos;m proficient in various modern technologies, these are some of my main technologies.
           </motion.p>
         </div>
         <div className='grid grid-cols-4 grid-rows-2 gap-4 mt-6'>
