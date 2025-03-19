@@ -6,6 +6,7 @@ import Projects1 from '../components/mainpage/Projects1.tsx'
 import Projects2 from '../components/mainpage/Projects2.tsx'
 import SEO from './Seo.tsx'
 import Skills from '../components/mainpage/Skills.tsx'
+import Reviews from '../components/Testimonials.tsx'
 
 export default function About() {
 
@@ -81,6 +82,7 @@ export default function About() {
       <Skills />
       <Projects1 />
       <Projects2 />
+      <Reviews />
       <Contact />
     </div>
   )
