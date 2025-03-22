@@ -56,7 +56,7 @@ export default function About() {
                 initial="hidden"
                 animate="visible"
               >
-              I&apos;m Lucy, a Software Developer based in New Zealand. I enjoy a balanced life, the fine dance between creativity and logic. This means listening to classical music while my mind works double-time crafting clean, organised code.
+              I&apos;m Lucy, a Software Developer based in Australia. I enjoy a balanced life, the fine dance between creativity and logic. This means listening to classical music while my mind works double-time crafting clean, organised code.
               </motion.p>
               <motion.p 
                 className='font-manrope pb-6'
