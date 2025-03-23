@@ -53,14 +53,11 @@ export default function Resume() {
           className='relative group'> 
           <a
             className='hover:text-gray-500'
-            href='/images/Resume.pdf'
-            download='Resume-Lucy-Mckenzie.pdf'
+            href='/images/LucyMckenzie_CV.pdf'
+            download='LucyMckenzie_CV'
           >
             <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
               <img src='/images/resume.png' alt='resume' />
-            </div>
-            <div className='w-[600px] h-auto rounded-sm shadow-lg hover:cursor-pointer'>
-              <img src='/images/resume1.png' alt='resume' />
             </div>
           </a>
         </motion.div>
