@@ -38,7 +38,7 @@ export default function Layout() {
           />
         </button>
         <div>
-          <Navbar isSky={isSky} />
+          <Navbar darkMode={darkMode} isSky={isSky} />
           <Outlet context={{ darkMode }} />
           <Footer darkMode={darkMode} />
         </div>
