@@ -69,11 +69,6 @@ export default function Projects2() {
               onMouseLeave={() => setIsImage(false)}
             />
           </Link>
-          <Link 
-            to='https://my-celium.devacademy.nz/'
-            target='_blank' rel='noopener noreferrer'>
-            <Button />
-          </Link>
 
           <div className='p-4 text-left space-y-2'>
             <h2 className='text-xs font-manrope'>CASE STUDY 03</h2>

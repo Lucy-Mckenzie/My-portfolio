@@ -15,11 +15,11 @@ export default function MyCelium() {
       <div className={`flex flex-col h-full mx-auto p-6 space-y-6 ${darkMode ? 'bg-[#3d4451] text-white' : 'bg-[#fffbf9] text-black'}`}>
         <div className='max-w-5xl mx-auto text-center'>
           <h1 className='font-manrope text-left font-semibold text-4xl'>
-    MyCelium: grow your own mushrooms 
+            MyCelium: grow your own mushrooms 
           </h1>
           <p 
             className='font-manrope test-sm text-left pb-5 underline'>
-      3 minute read
+            3 minute read
           </p>
           <div className='flex justify-center'>
             <img
@@ -33,11 +33,6 @@ export default function MyCelium() {
               className='text-xl font-light transition-transform duration-300 hover:scale-105'
             >
               View Code
-            </a>
-            <a href='https://my-celium.devacademy.nz/' target='_blank' rel='noopener noreferrer'
-              className='text-xl font-light transition-transform duration-300 hover:scale-105'
-            >
-             View Website
             </a>
           </div>
           <div className='text-left mb-10'>
